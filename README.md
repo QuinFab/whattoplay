@@ -1,2 +1,2 @@
-# whattoplay
+# WhatToPlay
 project
