@@ -1,2 +1,0 @@
-# WhatToPlay
-project
