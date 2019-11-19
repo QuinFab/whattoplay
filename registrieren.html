@@ -4,69 +4,30 @@
     <meta charset="UTF-8">
     <title>Registrieren</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <script src="js/custom.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-info">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">Navbar</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
 
-<form>
-    <div class="form-inline">
-        <label for="Username1">Benutzername &nbsp;</label>
-        <input type="email" class="form-control" id="Username1" aria-describedby="emailHelp"
-               placeholder="z.B. MaxMustermann3314">
-    </div>
-    <div class="form-inline">
-        <label for="exampleInputPassword1">Passwort &nbsp;</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Passwort">
-    </div>
+<h1>Registrieren</h1>
+<p> Jetzt die relevanten Information eintippen und direkt loslegen!</p>
 
-    <div class="form-inline">
-        <label for="exampleInputEmail1">Email-Adresse &nbsp; </label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelpInLine"
-               placeholder="z.B. MaxMustermann@gmail.de">
-    </div>
-    <small id="emailHelpInLine" class="form-text text-muted">
-        Die E-Mail-Adresse wird niemals an Dritte weitergegeben
-    </small>
-    <div class="form-inline">
-        <label for="confirmEmail">Email-Adresse bestätigen &nbsp;</label>
-        <input type="email" class="form-control" id="confirmEmail" aria-describedby="emailHelp"
-               placeholder="z.B. MaxMustermann@gmail.de">
-    </div>
+<form method="post">
+        <label for="Username">Benutzername </label>
+        <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314">
+        <br>
+        <label for="Passwort">Passwort </label>
+        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort">
+         <br>
+        <label for="UserMail">Email-Adresse </label>
+        <input id="UserMail" name="UserMail" type="email" placeholder="z.B. meineMail@web.de">
+         <br>
+        <label>Email-Adresse bestätigen </label>
+        <input type="email" placeholder="z.B. meineMail@web.de">
 
-    <button type="submit" class="btn btn-primary">Registrieren</button>
-
+    <button type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
+<!-- HIER NOCH PHP FUNKTION REINKNALLEN -->
 </form>
 
-
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-        crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/custom.js"></script>
 </body>
 </html>

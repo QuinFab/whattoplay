@@ -1,3 +1,29 @@
-.bg-info{
-    color: pink;
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px ;
+}
+p {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    block-size: 50px;
+    font-size: 30px;
+    color: white;
+    background: gray;
+}
+form {
+    text-align: center;
+}
+
+#registrierungBestätigen {
+    margin-top: 20px;
 }
