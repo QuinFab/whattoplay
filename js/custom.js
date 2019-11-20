@@ -19,8 +19,8 @@ function achtung(){
     }
 }
 function redirectAccountInformation(){
-    window.location.href = "AccountInformationen.html"
+    window.location.href = "AccountInformationen.php"
 }
 function redirectPräferenzen(){
-    window.location.href = "Präferenzen.html"
+    window.location.href = "Präferenzen.php"
 }
