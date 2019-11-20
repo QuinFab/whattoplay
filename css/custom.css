@@ -11,8 +11,12 @@ h2{
 p {
     text-align: center;
 }
-
 button {
+    display: block;
+    margin: 0 auto;
+}
+
+#redirectRegistrieren, #redirectEinloggen {
     display: block;
     margin: 0 auto;
     block-size: 50px;
@@ -27,3 +31,4 @@ form {
 #registrierungBestätigen {
     margin-top: 20px;
 }
+
