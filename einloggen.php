@@ -21,5 +21,8 @@
     <!-- HIER NOCH PHP FUNKTION REINKNALLEN -->
 </form>
 
+<button onclick="passwortVergessen()">Passwort Zurücksetzen</button>
+
+
 </body>
 </html>

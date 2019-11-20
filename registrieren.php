@@ -17,6 +17,7 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
     header('Location: einloggen.php');
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -43,6 +44,7 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
          <br>
         <label>Email-Adresse bestätigen </label>
         <input type="email" placeholder="z.B. meineMail@web.de">
+
 
     <button id="registrieren" type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
 

@@ -8,6 +8,11 @@ function redirectEinloggen(){
     window.location.href = "einloggen.php";
 }
 function registrierungBestätigen() {
+
+}
+function passwortVergessen(){
+    window.location.href="passwortVergessen.php";
+
 }
 function achtung(){
     var answer = window.confirm("Achtung! Sind sie sich ganz sicher, dass sie ihr Konto löschen wollen? Dies kann nicht mehr rückgangig gemacht werden")
@@ -23,4 +28,5 @@ function redirectAccountInformation(){
 }
 function redirectPräferenzen(){
     window.location.href = "Präferenzen.php"
+
 }
