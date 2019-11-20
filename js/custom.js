@@ -2,10 +2,10 @@ function Platzhalter(){
     alert("Die Funktion gibts noch nicht, hör auf da drauf zu klicken! Später gibts dann was sinnvolles")
 }
 function redirectZuRegistrieren(){
-    window.location.href = "registrieren.html";
+    window.location.href = "registrieren.php";
 }
 function redirectEinloggen(){
-    window.location.href = "einloggen.html";
+    window.location.href = "einloggen.php";
 }
 function registrierungBestätigen() {
 }
@@ -19,8 +19,8 @@ function achtung(){
     }
 }
 function redirectAccountInformation(){
-    window.location.href = "AccountInformationen.html"
+    window.location.href = "AccountInformationen.php"
 }
 function redirectPräferenzen(){
-    window.location.href = "Präferenzen.html"
+    window.location.href = "Präferenzen.php"
 }
