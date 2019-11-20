@@ -39,7 +39,7 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
         <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314" minlength="3" maxlength="16" required>
         <br>
         <label for="Passwort">Passwort </label>
-        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort" minlength="8" required>
+        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort" minlength="8" maxlength="16" required>
          <br>
         <label for="UserMail">Email-Adresse </label>
         <input id="UserMail" name="UserMail" type="email" placeholder="z.B. meineMail@web.de" required>
