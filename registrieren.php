@@ -1,3 +1,22 @@
+<?php
+if (isset($_POST['Username'])) {
+// VERARBEITUNG
+$db = new PDO(
+        'mysql:host=localhost;dbname=iba',
+        'root',
+        ''
+);
+
+$query = 'INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)';
+$preparedStmt = $db->prepare($query);
+
+$preparedStmt->bindValue(':user_id', $_POST['Username']);
+$preparedStmt->bindValue(':email', $_POST['UserMail']);
+$preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD_BCRYPT, ['cost' => 12]));
+        $res = $preparedStmt->execute();
+    header('Location: einloggen.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -26,7 +45,7 @@
         <input type="email" placeholder="z.B. meineMail@web.de">
 
     <button type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
-<!-- HIER NOCH PHP FUNKTION REINKNALLEN -->
+
 </form>
 
 </body>

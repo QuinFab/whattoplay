@@ -17,8 +17,6 @@
 </head>
 <body>
 
-
-
 <h1> WhatToPlay?</h1>
 <p> Manchmal ist es garnicht so leicht, rauszufinden welches Spiel man spielen soll. <br>
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
