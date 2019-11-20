@@ -7,7 +7,7 @@
 </head>
 <body>
 <h1>Passwort Zurücksetzen</h1>
-<form method="post">
+<form method="post"> 
     <label for="e-mail">E-mail</label>
     <input id="e-mail" type="text" placeholder="max@mustermann.de">
     <br>
