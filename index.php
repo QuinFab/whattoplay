@@ -22,10 +22,10 @@
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>
     Erstelle dir jetzt einen Account, um direkt loszulegen!</p>
-<button type="button" onclick="redirectZuRegistrieren()">Registrieren</button>
+<button id="redirectRegistrieren" type="button" onclick="redirectZuRegistrieren()">Registrieren</button>
 
 <h2> Schon Mitglied?</h2>
-<button type="button" onclick="redirectEinloggen()">Einloggen</button>
+<button id="redirectEinloggen" type="button" onclick="redirectEinloggen()">Einloggen</button>
 
 </body>
 </html>
