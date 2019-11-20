@@ -11,10 +11,10 @@
 <h1> Einloggen </h1>
 <form method="post">
     <label for="Username">Benutzername </label>
-    <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314">
+    <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314" required minlength="3" maxlength="16">
     <br>
     <label for="Passwort">Passwort </label>
-    <input id="Passwort" name="Passwort" type="password" placeholder="Passwort">
+    <input id="Passwort" name="Passwort" type="password" placeholder="Passwort" required maxlength="16" minlength="8">
     <br>
 
     <button type="submit" onclick="Platzhalter()">Einloggen</button>
