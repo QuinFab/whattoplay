@@ -26,6 +26,7 @@
         <input type="email" placeholder="z.B. meineMail@web.de">
 
     <button id="registrieren" type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
+
 <!-- HIER NOCH PHP FUNKTION REINKNALLEN -->
 </form>
 
