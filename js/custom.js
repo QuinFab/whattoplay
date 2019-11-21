@@ -26,7 +26,15 @@ function achtung(){
 function redirectAccountInformation(){
     window.location.href = "AccountInformationen.php"
 }
-function redirectPräferenzen(){
+function redirectPraeferenzen(){
     window.location.href = "Präferenzen.php"
 
+}
+function PraeferenzenAbschicken(){
+    document.getElementById("FormGenre").submit();
+    document.getElementById("FormPlattform").submit();
+    document.getElementById("FormZeit").submit();
+    document.getElementById("FormAlter").submit();
+    document.getElementById("FormSingleMulti").submit();
+    document.getElementById("FormBudget").submit();
 }

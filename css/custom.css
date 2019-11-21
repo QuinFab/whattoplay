@@ -26,9 +26,13 @@ button {
 }
 form {
     text-align: center;
+    margin: 20px;
 }
 
 #registrierungBestätigen {
     margin-top: 20px;
 }
 
+#Lable {
+    font-size: 24px;
+}
