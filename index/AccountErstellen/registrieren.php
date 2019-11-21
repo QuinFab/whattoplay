@@ -17,15 +17,14 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
     header('Location: einloggen.php');
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Registrieren</title>
 
-    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
+    <script src="../../js/custom.js"></script>
 </head>
 <body>
 
@@ -44,7 +43,6 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
          <br>
         <label>Email-Adresse bestätigen </label>
         <input type="email" placeholder="z.B. meineMail@web.de">
-
 
     <button id="registrieren" type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
 

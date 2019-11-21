@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> WhatToPlay</title>
 
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
-    <script src="js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/custom.css" />
+    <script src="../js/custom.js"></script>
     <?php $db_link = mysqli_connect (
                      "localhost",
                      "root",
