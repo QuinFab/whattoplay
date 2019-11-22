@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
-    <script src="../../js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <script src="js/custom.js"></script>
 </head>
 <body>
 <h1>Passwort Zurücksetzen</h1>

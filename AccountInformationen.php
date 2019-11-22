@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Benutzerinformationen</title>
 
-    <link rel="stylesheet" type="text/css" href="../../css/custom.css"/>
-    <script src="../../js/custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+    <script src="js/custom.js"></script>
 </head>
 <body>
 
