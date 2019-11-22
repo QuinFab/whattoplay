@@ -33,20 +33,22 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
 
 <form method="post">
         <label for="Username">Benutzername </label>
-        <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314">
+        <input id="Username" name="Username" type="text" placeholder="z.B. MaxMaster3314" required maxlength="16" minlength="8">
         <br>
         <label for="Passwort">Passwort </label>
-        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort">
+        <input id="Passwort" name="Passwort" type="password" placeholder="Passwort" required maxlength="16" minlength="8">
          <br>
+    <label> Passwort Bestätigen </label>
+    <input id="Passwort" name="Passwort" type="password" placeholder="Passwort" required maxlength="16" minlength="8">
+    <br>
         <label for="UserMail">Email-Adresse </label>
-        <input id="UserMail" name="UserMail" type="email" placeholder="z.B. meineMail@web.de">
+        <input id="UserMail" name="UserMail" type="email" placeholder="z.B. meineMail@web.de" required maxlength="16" minlength="8">
          <br>
         <label>Email-Adresse bestätigen </label>
-        <input type="email" placeholder="z.B. meineMail@web.de">
+        <input type="email" placeholder="z.B. meineMail@web.de" required maxlength="32" minlength="6">
 
-    <button type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
+    <button type="submit" onclick="InsertSignIn()" >Registrierung bestätigen</button>
 
 </form>
-
 </body>
 </html>
