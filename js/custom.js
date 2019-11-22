@@ -1,6 +1,9 @@
 function Platzhalter(){
     alert("Die Funktion gibts noch nicht, hör auf da drauf zu klicken! Später gibts dann was sinnvolles")
 }
+function InsertSignIn(){
+    alert("Ihr Account wurde erfolgreich angelegt. Prüfe bitte dein E-Mails um deine E-Mail zu verifizieren")
+}
 function redirectZuRegistrieren(){
     window.location.href = "registrieren.php";
 }
