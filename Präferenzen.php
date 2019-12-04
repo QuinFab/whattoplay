@@ -8,6 +8,7 @@
     <script src="js/custom.js"></script>
 </head>
 <body>
+
 <div>
     <ul id="Navbar">
         <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
@@ -17,6 +18,8 @@
     </ul>
 </div>
 <h1> Präferenzen </h1>
+
+<h1 id="HeaderPräferenzen"> Präferenzen </h1>
 <form method="post" id="FormGenre">
     <label id="Lable" for="Genre">Genre </label> <br>
     <input id="Genre" name="Genre" value="Action" type="radio">Action <br>
@@ -44,7 +47,7 @@
     <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="20Stunden" type="radio">ca. 20 Stunden <br>
     <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="30Stunden" type="radio">ca. 30 Stunden <br>
     <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50Stunden" type="radio">ca. 50 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50+Stunden" type="radio">ca. 50+ Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50+Stunden" type="radio">50+ Stunden <br>
     <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="Egal" type="radio">Egal <br>
 </form>
 

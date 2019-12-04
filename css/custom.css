@@ -3,14 +3,16 @@ h1 {
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 30px;
     text-align: center;
-    padding-top: 40px ;
+    padding-top: 40px;
 }
+
 p {
     text-align: center;
 }
+
 button {
     display: block;
     margin: 0 auto;
@@ -29,16 +31,30 @@ form {
     margin: 20px;
 }
 
+#FormGenre, #FormAlter, #FormBudget, #FormPlattform, #FormSingleMulti, #FormZeit {
+    margin: 27px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    float: left;
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 20px;
+
+}
+
 #registrierungBestätigen {
     margin-top: 20px;
 }
 
 #Lable {
-    font-size: 24px;
+      font-size: 30px;
+    padding: 2px;
 }
 body{
     margin:0;
     font-family: "arial";
+    background-image: url("https://images2.alphacoders.com/713/thumb-1920-713713.jpg");
 }
 #Navbar{
     list-style-type: none;
@@ -70,4 +86,14 @@ body{
 .navbar:active{
     background-color: #5a6268;
     border-color: #5a6268;
+}
+#PräferenzenAbschicken {
+    position: absolute;
+    bottom: 500px;
+    left: 700px;
+    font-size: 30px;
+}
+
+#HeaderPräferenzen{
+    color:white;
 }
