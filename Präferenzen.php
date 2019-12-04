@@ -17,7 +17,6 @@
         <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
     </ul>
 </div>
-<h1> Präferenzen </h1>
 
 <h1 id="HeaderPräferenzen"> Präferenzen </h1>
 <form method="post" id="FormGenre">
