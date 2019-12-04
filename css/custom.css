@@ -32,7 +32,7 @@ form {
 }
 
 #FormGenre, #FormAlter, #FormBudget, #FormPlattform, #FormSingleMulti, #FormZeit {
-    margin: 27px;
+    margin: 20px;
     border-style: solid;
     border-color: black;
     border-width: 3px;
@@ -53,8 +53,13 @@ form {
 }
 body{
     margin:0;
-    font-family: "arial";
+    font-family: "arial", serif;
     background-image: url("https://images2.alphacoders.com/713/thumb-1920-713713.jpg");
+    text-shadow:  1px  1px 1px black,
+    1px -1px 1px black,
+    -1px  1px 1px black,
+    -1px -1px 1px black;
+    color: white;
 }
 #Navbar{
     list-style-type: none;
@@ -97,3 +102,4 @@ body{
 #HeaderPräferenzen{
     color:white;
 }
+

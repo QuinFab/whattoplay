@@ -53,11 +53,9 @@ $preparedStmt->bindValue(':password', password_hash($_POST['Passwort'], PASSWORD
         <label>Email-Adresse bestätigen </label>
         <input type="email" placeholder="z.B. meineMail@web.de">
 
-
-    <button id="registrieren" type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
-
 <!-- HIER NOCH PHP FUNKTION REINKNALLEN -->
 </form>
+<button id="registrierenButton" type="submit" onclick="Platzhalter()" >Registrierung bestätigen</button>
 
 </body>
 </html>
