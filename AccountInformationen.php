@@ -11,7 +11,6 @@
 
 <p> Benutzername: [Dein Nutzername]</p>
 <p> E-Mail-Adresse: [Deine Mail]</p>
-<button id="redirectPräferenzen" onclick="redirectPraeferenzen()"> Präferenzen</button>
 
 </body>
 </html>
