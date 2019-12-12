@@ -38,3 +38,8 @@ function PraeferenzenAbschicken(){
     document.getElementById("FormSingleMulti").submit();
     document.getElementById("FormBudget").submit();
 }
+
+function SpielevorschlagGenerieren(){
+    window.location.href = "spielvorschlag.php"
+    //FUNKTION DAMIT SPIEL AUCH WIRKICH GENERIERT WIRD
+}

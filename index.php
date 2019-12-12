@@ -29,5 +29,7 @@
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>
     Erstelle dir jetzt einen Account, um direkt loszulegen!</p>
+
+<button id="spielvorschlagGenerieren" onclick="SpielevorschlagGenerieren()"> Spielvorschlag generieren</button>
 </body>
 </html>

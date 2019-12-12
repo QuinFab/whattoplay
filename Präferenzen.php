@@ -8,7 +8,6 @@
     <script src="js/custom.js"></script>
 </head>
 <body>
-
 <div>
     <ul id="Navbar">
         <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
@@ -17,7 +16,7 @@
         <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
     </ul>
 </div>
-
+<div id="allePräferenzen">
 <h1 id="HeaderPräferenzen"> Präferenzen </h1>
 <form method="post" id="FormGenre">
     <label id="Lable" for="Genre">Genre </label> <br>
@@ -76,6 +75,6 @@
 </form>
 
 <button id="PräferenzenAbschicken" type="submit" onclick="PraeferenzenAbschicken()" >Präferenzen aktualisieren</button>
-
+</div>
 </body>
 </html>
