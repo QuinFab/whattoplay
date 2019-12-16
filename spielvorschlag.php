@@ -20,6 +20,7 @@
 </div>
 <div class="SpielVorschlag">
     <ul>
+        <h1 id="Spieletitel"> Platzhalter: Spieletitel</h1>
 <li> <img id="Spielecover" src="https://inter67.de/wp-content/uploads/2018/06/Platzhalter-1.png"> </li>
     <li><div id="Spielebeschreibung">
     <p> Platzhalter für die Spielebeschreibung mit Dummy Text zum stylen. Lorem ipsum dolor amet kinfolk YOLO cornhole semiotics, </p>
