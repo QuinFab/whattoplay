@@ -40,12 +40,12 @@
 
 <form method="post" id="FormZeit">
     <label id="Lable" for="Zeitlicher Aufwand">Zeitlicher Aufwand </label> <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="5Stunden" type="radio">ca. 5 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="10Stunden" type="radio">ca. 10 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="20Stunden" type="radio">ca. 20 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="30Stunden" type="radio">ca. 30 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50Stunden" type="radio">ca. 50 Stunden <br>
-    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50+Stunden" type="radio">50+ Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="5Stunden" type="radio">bis zu 5 Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="10Stunden" type="radio">bis zu 10 Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="20Stunden" type="radio">bis zu 20 Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="30Stunden" type="radio">bis zu 30 Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50Stunden" type="radio">bis zu 50 Stunden <br>
+    <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="50+Stunden" type="radio">mehr als 50 Stunden <br>
     <input id="Zeitlicher Aufwand" name="Zeitlicher Aufwand" value="Egal" type="radio">Egal <br>
 </form>
 
