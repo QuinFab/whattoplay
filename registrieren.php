@@ -16,11 +16,10 @@ if (isset($_POST['User_id'])) {
     $email = $_POST['email'];
     $email_again = $_POST['email_again'];
 
-    $statement = $db->prepare("INSERT INTO user(user_id,email,password) VALUES ('$user_id', '$email', '$password')");
-    $array = $user_id + $password + email;
-    print_r($array);
+    $statement = $db->eexecute("INSERT INTO user(user_id,email,password) VALUES ('$user_id', '$email', '$password')");
+
     //  if ($user_id != 0 and $email == $email_again and $password == $password_again) {
-    $res = $statement->execute();
+    
 
     //header('Location: einloggen.php');
     //}
