@@ -34,8 +34,12 @@
     <database name="iba">
         <!-- Tabelle user -->
         <table name="user">
-            <column name="user_id"></column>
-            <column name="email"></column>
+            <column name="user_id">
+
+            </column>
+            <column name="email">
+
+            </column>
             <column name="password">$2y$12$MrIsYVOeo/2dHXi7.vjsCOcqyIfWSin9NCcqHmoRkbP.w1fQ2z2G2</column>
         </table>
     </database>
