@@ -7,13 +7,6 @@
 
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <script src="js/custom.js"></script>
-    <?php $db_link = mysqli_connect (
-                     "localhost",
-                     "root",
-                     "",
-                     "iba"
-                    );
-?>
 </head>
 <body>
 <div>
