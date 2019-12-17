@@ -4,7 +4,7 @@ function Platzhalter()
 }
 /*
 function redirectZuRegistrieren(){
-    window.location.href = "registrieren.html";
+    window.location.href = "registrieren.php";
 }
 */
 function redirectEinloggen(){
