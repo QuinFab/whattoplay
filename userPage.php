@@ -23,7 +23,7 @@
         echo "Herzlich Willkommen ".$_SESSION['username'];
     } else {
         Print "Bitte erst einloggen";
-        header('Location: http://localhost/whattoplay/einloggen.php'); exit;
+        header('Location: http://localhost/whattoplay/einloggen.php'); exit; //Port 8888 für Mac
     }
     ?>
     <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
