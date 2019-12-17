@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <?php
-if (isset($_POST['UserMail_again'])) {
+
+print_r("-2");
+if (isset($_POST['email'])) {
+
+    print_r("-1");
     // VERARBEITUNG
     $db = new PDO(
         'mysql:host=localhost;dbname=iba',
@@ -8,6 +12,7 @@ if (isset($_POST['UserMail_again'])) {
         ''
     );
 
+    print_r("0");
     if ($db == NULL) {
         print_r("error db");
     }
@@ -19,7 +24,7 @@ if (isset($_POST['UserMail_again'])) {
   //  if ($user_id != 0 and $email == UserMail_again and $password == $password_again) {
 
     print_r("1");
-    $query = "INSERT INTO user (user_id, email, password) VALUES (':user_id', ':email', ':password')";
+    $query = "INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)";
 
     print_r("2");
     $preparedStmt = $db->prepare($query);
