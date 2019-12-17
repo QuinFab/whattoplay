@@ -21,26 +21,38 @@ if (isset($_POST['email'])) {
     $password_again = $_POST['password_again'];
     $email = $_POST['email'];
     $email_again = $_POST['UserMail_again'];*/
-  //  if ($user_id != 0 and $email == UserMail_again and $password == $password_again) {
+    //  if ($user_id != 0 and $email == UserMail_again and $password == $password_again) {
 
-    print_r("1");
     $query = "INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)";
-
-    print_r("2");
+    if ($query == NULL) {
+        print_r("query ist NULL");
+    }
+    else
+    {
+        print_r($query);
+    }
     $preparedStmt = $db->prepare($query);
-
-    print_r("3");
-    $preparedStmt->bindValue(':user_id', $_POST['Username']);
-    print_r("4");
-    $preparedStmt->bindValue(':email', $_POST['UserMail']);
-    print_r("5");
+    if ($preparedStmt == NULL) {
+        print_r("preparedStmt ist NULL");
+    }
+    else
+    {
+        print_r($preparedStmt);
+    }
+    $preparedStmt->bindValue(':user_id', $_POST['user_id']);
+    $preparedStmt->bindValue(':email', $_POST['email']);
     $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
-    print_r("6");
     $res = $preparedStmt->execute();
-    print_r("7");
-    header('Location: einloggen.php');
-    print_r("8");
-   // } else {
+    if($res == NULL)
+    {
+        print_r("res ist NULL");
+    }
+    else
+    {
+        print_r($res);
+    }
+    //header('Location: einloggen.php');
+    // } else {
     //    print_r("geht nicht");
     //}
 //header('Location: einloggen.php');
@@ -87,7 +99,7 @@ if (isset($_POST['email'])) {
     <label for="UserMail_again"> Email-Adresse bestätigen </label>
     <input id="UserMail_again" name="Email Bestatigen" type="email" placeholder="z.B. meineMail@web.de">
     <br>
-<button type="submit">Registrierung bestätigen</button>
+    <button type="submit">Registrierung bestätigen</button>
 </form>
 
 </body>
