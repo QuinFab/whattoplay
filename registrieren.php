@@ -1,61 +1,38 @@
 <!DOCTYPE html>
 <?php
-
-print_r("-2");
+$prüf = 0;
 if (isset($_POST['email'])) {
-
-    print_r("-1");
-    // VERARBEITUNG
-    $db = new PDO(
-        'mysql:host=localhost;dbname=iba',
-        'root',
-        ''
-    );
-
-    print_r("0");
-    if ($db == NULL) {
-        print_r("error db");
-    }
-    /*$user_id = $_POST['user_id'];
-    $password = $_POST['password'];
-    $password_again = $_POST['password_again'];
-    $email = $_POST['email'];
-    $email_again = $_POST['UserMail_again'];*/
-    //  if ($user_id != 0 and $email == UserMail_again and $password == $password_again) {
-
+$prüf++;
+// VERARBEITUNG
+$db = new PDO(
+    'mysql:host=localhost;dbname=iba',
+    'root',
+    ''
+);
+if ($db == NULL) {
+    print_r("PDO konnte nicht erstellt werden!");
+}
     $query = "INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)";
     if ($query == NULL) {
         print_r("query ist NULL");
-    }
-    else
-    {
-        print_r($query);
-    }
+    } else
     $preparedStmt = $db->prepare($query);
     if ($preparedStmt == NULL) {
         print_r("preparedStmt ist NULL");
-    }
-    else
-    {
-        print_r($preparedStmt);
     }
     $preparedStmt->bindValue(':user_id', $_POST['user_id']);
     $preparedStmt->bindValue(':email', $_POST['email']);
     $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
     $res = $preparedStmt->execute();
-    if($res == NULL)
-    {
+    if ($res == NULL) {
         print_r("res ist NULL");
     }
-    else
-    {
-        print_r($res);
-    }
-    //header('Location: einloggen.php');
-    // } else {
-    //    print_r("geht nicht");
-    //}
-//header('Location: einloggen.php');
+    header('Location: einloggen.php');
+}
+else
+{
+    if($prüf != 0)
+    print_r("POST wird nicht erkannt!");
 }
 ?>
 <html lang="de">
@@ -90,14 +67,14 @@ if (isset($_POST['email'])) {
     <input id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
     <br>
     <label for="password_again">Passwort Bestätigen </label>
-    <input id="password_again" name="Passwort Bestatigen" type="password" placeholder="Passwort Bestätigen"
+    <input id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
            minlength="8" maxlength="16">
     <br>
     <label for="email"> Email-Adresse </label>
     <input id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
     <br>
     <label for="UserMail_again"> Email-Adresse bestätigen </label>
-    <input id="UserMail_again" name="Email Bestatigen" type="email" placeholder="z.B. meineMail@web.de">
+    <input id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
     <br>
     <button type="submit">Registrierung bestätigen</button>
 </form>
