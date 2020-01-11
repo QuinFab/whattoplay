@@ -1,3 +1,6 @@
+<?php
+require "php-config.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +14,15 @@
 <div>
     <ul id="Navbar">
         <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
-        <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>
+      <!--  <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>-->
         <li id="registrieren"><a href="registrieren.php" class="navbar">Registrieren</a></li>
         <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
     </ul>
 </div>
+<?php
+echo "Benutzername: " . $_SESSION["user_id"];
+echo "E-Mail-Adresse: " . $_SESSION["email"];
 
-<p> Benutzername: [Dein Nutzername]</p>
-<p> E-Mail-Adresse: [Deine Mail]</p>
-
+?>
 </body>
 </html>

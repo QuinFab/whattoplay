@@ -1,3 +1,7 @@
+<?php
+require "php-config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -11,13 +15,20 @@
 <body>
 <div>
 <ul id="Navbar">
+    <?php if (isset($_SESSION["user_id"])) : ?>
     <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
     <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>
+    <?php else : ?>
+    <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
     <li id="registrieren"><a href="registrieren.php" class="navbar">Registrieren</a></li>
     <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
+    <?php endif; ?>
 </ul>
 </div>
 <h1>WhatToPlay?</h1>
+<?php
+echo "Hallo User: " . $_SESSION["user_id"];
+?>
 <p> Manchmal ist es garnicht so leicht, rauszufinden welches Spiel man spielen soll. <br>
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>
