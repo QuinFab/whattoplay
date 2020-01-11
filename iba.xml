@@ -25,6 +25,21 @@
                   UNIQUE KEY `e-mail` (`email`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
             </pma:table>
+            <pma:table name="Spiele">
+                CREATE TABLE `Spiele`(
+                `spiel_id` int unique auto_increment,
+                `spieletitel` varchar(100),
+                `gover` varchar(600),
+                `genre` varchar(100),
+                `plattform` varchar(100),
+                `zeit_aufwand` varchar(100),
+                `alterbeschraenkung` varchar(7),
+                `single_multiplayer` varchar(100),
+                `budget` double,
+                `beschreibung` varchar(9000),
+                PRIMARY KEY (`spiel_id`)
+                )ENGINE=InnoDB DEFAULT CHARSET?utf8mb4;
+            </pma:table>
         </pma:database>
     </pma:structure_schemas>
 

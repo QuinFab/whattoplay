@@ -27,8 +27,21 @@ require "php-config.php";
 </div>
 <h1>WhatToPlay?</h1>
 <?php
-echo "Hallo User: " . $_SESSION["user_id"];
-?>
+/*
+
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', '');
+
+$spiel = "A Hat in Time";
+
+$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'A Hat in Time'");
+$result = $statement->execute();
+$user = $statement->fetch();
+$ausgelesen = mysql_fetch_array($pdo);
+Header("Content-Type: image/jpeg");
+echo $user[0];
+
+
+*/?>
 <p> Manchmal ist es garnicht so leicht, rauszufinden welches Spiel man spielen soll. <br>
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>
