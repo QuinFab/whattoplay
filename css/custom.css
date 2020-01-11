@@ -85,6 +85,11 @@ body{
     width: 100%;
     min-height: 100%;
 }
+
+#willkommen{
+    alignment: center;
+}
+
 #Navbar{
     list-style-type: none;
     padding: 0;
@@ -95,7 +100,7 @@ body{
     position: sticky;
     top: 0;
 }
-#einloggen, #registrieren, #account{
+#einloggen, #registrieren, #account, #logout{
     float: right;
 }
 .navbar{
