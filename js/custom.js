@@ -52,3 +52,7 @@ function SpielevorschlagGenerieren(){
     window.location.href = "spielvorschlag.php"
     //FUNKTION DAMIT SPIEL AUCH WIRKICH GENERIERT WIRD
 }
+
+function spielvorschlagDislike(){
+
+}

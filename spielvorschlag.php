@@ -1,9 +1,9 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
 
 $spiel = "A Hat in Time";
 
-$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'GTA V'");
+$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'Dark Souls 3'");
 $result = $statement->execute();
 $cover = $statement->fetch();
 
@@ -24,26 +24,32 @@ $spieletitel = $stmnt->fetch();
 <div>
     <ul id="Navbar">
         <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
-        <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>
+        <li id="account"><a href="userPage.php" class="navbar"><img
+                        src="https://img.icons8.com/android/24/000000/user.png"></a></li>
         <li id="registrieren"><a href="registrieren.php" class="navbar">Registrieren</a></li>
         <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
     </ul>
 </div>
-<div class="SpielVorschlag">
+<div id="SpielVorschlag">
     <ul>
-        <h1 id="Spieletitel"><?php echo $spieletitel[0] ?></h1>
-<li> <?php echo "<img src= $cover[0]>"; ?> </li>
-    <li><div id="Spielebeschreibung">
-    <p> Platzhalter für die Spielebeschreibung mit Dummy Text zum stylen. Lorem ipsum dolor amet kinfolk YOLO cornhole semiotics, </p>
-    <p>cold-pressed migas lo-fi. Yr 3 wolf moon hammock viral, chillwave mumblecore meggings keffiyeh cold-pressed banjo disrupt </p>
-    <p>mustache pork belly retro. Jean shorts put a bird on it subway tile, knausgaard tattooed activated charcoal </p>
-    <p>asymmetrical af fashion axe. Post-ironic mlkshk activated charcoal chia +1. </p>
-    <p> Polaroid wayfarers brooklyn, cray crucifix normcore woke cornhole brunch butcher blue bottle craft beer ennui deep v. </p>
-    <p> Four dollar toast semiotics blue bottle forage food truck wayfarers asymmetrical glossier. Meh post-ironic listicle bespoke. </p>
-    </div></li>
-        </ul>
+        <p id="Spieletitel"><?php echo $spieletitel[0] ?></p>
+        <li>
+            <div id="spielecoverContainer"> <?php echo "<img id='Spielecover' src= $cover[0]>"; ?> </div>
+        </li>
+        <li>
+            <div id="Spielebeschreibung">
+                <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
+                <p> Genre: [PHP GENRE1, PHP GENRE2] </p>
+                <p> Plattform(en): [PHP PLATTFORMEN] </p>
+                <p> Spielzeit der Hauptgeschichte: [PHP ZEITLICHER AUFWAND] </p>
+                <p> Altersbeschränkung: [PHP ALTERSBESCHRÄNKUNG] </p>
+                <p> Singleplayer/Multiplayer: [PHP SINGLE/MULTIPLAYER] </p>
+                <p> Offizieller Preis: [PHP BUDGET] </p>
+                <p> Kurze Beschreibung: [PHP SPIELEBESCHREIBUNG] </p>
+            </div>
+        </li>
+    </ul>
 </div>
-
 
 </body>
 

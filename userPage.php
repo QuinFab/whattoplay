@@ -19,7 +19,7 @@ require "php-config.php";
         <li id="einloggen"><a href="einloggen.php" class="navbar">Einloggen</a></li>
     </ul>
 </div>
-<h1> Benutzerkonto
+<h1>
     <?php
     if (isset($_SESSION['user_id'])) {
         echo "Herzlich Willkommen ". $_SESSION['user_id'];
@@ -31,7 +31,5 @@ require "php-config.php";
     <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
     <button id="PräferenzenÄndern" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
     <button id="AccountDelete" onclick="achtung()"> Account löschen </button>
-
-  }
 </body>
 </html>
