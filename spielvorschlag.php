@@ -3,7 +3,7 @@ $pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', '');
 
 $spiel = "A Hat in Time";
 
-$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'A Hat in Time'");
+$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'GTA V'");
 $result = $statement->execute();
 $cover = $statement->fetch();
 
