@@ -34,7 +34,7 @@ VALUES ("The Witcher 3: Wild Hunt", "/WhatToPlay/Bilder_WhatToPlay/Witcher3WildH
 ("South Park die Rektakuläre Zerreißprobe", "/WhatToPlay/Bilder_WhatToPlay/SouthPark2.jpg", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 17 Stunden", "16", "Singleplayer", "50 Euro"),
 ("Super Mario Odyssey", "/WhatToPlay/Bilder_WhatToPlay/SuperMarioOdyssey.jpg", "Jump & Run", "Nintendo Switch", "ca 13 Stunden", "6", "Singleplayer, Multiplayer", "60 Euro"),
 ("SteamWorld Heist", "/WhatToPlay/Bilder_WhatToPlay/SteamWorldHeist.jpg", "Strategie", "PC, PS4, Nintendo Switch", "ca 12 Stunden", "12", "Singleplayer", "15 Euro"),
-("Bastion", "/WhatToPlay/Bilder_WhatToPlay/Bastion.png", "Action", "PC, PS4", "ca 6 Stunden", "12", "Singleplayer", "15 Euro"),
+("Bastion", "/WhatToPlay/Bilder_WhatToPlay/Bastion.jpg", "Action", "PC, PS4", "ca 6 Stunden", "12", "Singleplayer", "15 Euro"),
 ("Counter Strike: Global Offensive", "/WhatToPlay/Bilder_WhatToPlay/CSGO.jpg", "Shooter", "PC", "/", "18", "Multiplayer", "Kostenlos"),
 ("Metin 2", "/WhatToPlay/Bilder_WhatToPlay/Metin2.jpg", "Rollenspiel", "PC", "500 Stunden+", "12", "Multiplayer", "Kostenlos");
 
