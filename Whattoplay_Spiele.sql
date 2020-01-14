@@ -4,7 +4,7 @@ use iba;
 create table if not exists Spiele(
 spiel_id int unique auto_increment,
 spieletitel varchar(100),
-cover varchar(600),
+cover varchar(600) ,
 genre1 varchar(100),
 genre2 varchar(100),
 plattform varchar(100),
