@@ -1,7 +1,7 @@
 <?php
 require "php-config.php";
 
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //Mac = 'root'
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', 'root'); //Mac = 'root'
 
 if (isset($_GET['login'])) {
     $email1 = $_POST['email'];

@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', 'root'); //pwd: root für mac
 
 $spiel = "A Hat in Time";
 

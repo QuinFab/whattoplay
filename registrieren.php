@@ -7,7 +7,7 @@ $prüf++;
 $db = new PDO(
     'mysql:host=localhost;dbname=iba',
     'root',
-    '' //pwd root für mac
+    'root' //pwd root für mac
 );
 if ($db == NULL) {
     print_r("PDO konnte nicht erstellt werden!");
