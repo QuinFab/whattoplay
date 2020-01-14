@@ -1,4 +1,15 @@
 <?php
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', '');
+
+$spiel = "A Hat in Time";
+
+$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'A Hat in Time'");
+$result = $statement->execute();
+$cover = $statement->fetch();
+
+$stmnt = $pdo->prepare("select spieletitel from spiele where spiel_id = 10");
+$result = $stmnt->execute();
+$spieletitel = $stmnt->fetch();
 ?>
 
 <html lang="en">
@@ -20,8 +31,8 @@
 </div>
 <div class="SpielVorschlag">
     <ul>
-        <h1 id="Spieletitel"> Platzhalter: Spieletitel</h1>
-<li> <img id="Spielecover" src="https://inter67.de/wp-content/uploads/2018/06/Platzhalter-1.png"> </li>
+        <h1 id="Spieletitel"><?php echo $spieletitel[0] ?></h1>
+<li> <?php echo "<img src= $cover[0]>"; ?> </li>
     <li><div id="Spielebeschreibung">
     <p> Platzhalter für die Spielebeschreibung mit Dummy Text zum stylen. Lorem ipsum dolor amet kinfolk YOLO cornhole semiotics, </p>
     <p>cold-pressed migas lo-fi. Yr 3 wolf moon hammock viral, chillwave mumblecore meggings keffiyeh cold-pressed banjo disrupt </p>
