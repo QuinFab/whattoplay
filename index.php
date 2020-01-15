@@ -27,6 +27,7 @@ require "php-config.php";
 </ul>
 </div>
 <h1>WhatToPlay?</h1>
+
 <p> Manchmal ist es garnicht so leicht, rauszufinden welches Spiel man spielen soll. <br>
     Diese Website soll dir dabei helfen, dich zurecht zu finden!<br>
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>

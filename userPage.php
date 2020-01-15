@@ -36,9 +36,9 @@ require "php-config.php";
         exit; //Port 8888 für Mac
     }
     ?>
-    <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen</button>
-    <button id="PräferenzenÄndern" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten</button>
-    <button id="AccountDelete" onclick="achtung()"> Account löschen</button>
+    <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
+    <button id="PräferenzenÄndern" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
+    <button id="AccountDelete" onclick="achtung()"> Account löschen </button>
 
 </body>
 </html>
