@@ -2,12 +2,12 @@
 $pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
 
 $spiel = "A Hat in Time";
-
-$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spieletitel = 'Dark Souls 3'");
+$zufall = rand(1,29);
+$statement = $pdo->prepare("SELECT cover FROM spiele WHERE spiel_id = $zufall");
 $result = $statement->execute();
 $cover = $statement->fetch();
 
-$stmnt = $pdo->prepare("select spieletitel from spiele where spiel_id = 10");
+$stmnt = $pdo->prepare("select spieletitel from spiele where spiel_id = $zufall");
 $result = $stmnt->execute();
 $spieletitel = $stmnt->fetch();
 ?>
