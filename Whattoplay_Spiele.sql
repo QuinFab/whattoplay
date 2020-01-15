@@ -21,7 +21,7 @@ INSERT INTO Spiele (spieletitel, cover, genre1, plattform, zeit_aufwand, alterbe
 VALUES ("The Witcher 3: Wild Hunt", "/WhatToPlay/Bilder_WhatToPlay/Witcher3WildHunt.jpg", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "50 Stunden", "18", "Singleplayer", "40 Euro"),
 ("XCOM: Enemy Unknown", "/WhatToPlay/Bilder_WhatToPlay/XCOMEnemyUnknown.jpg", "Strategie", "PC", "ca 30 Stunden", "16", "Singleplayer, Multiplayer", "30 Euro"),
 ("Crash Bandicoot N. Sane Trilogy", "/WhatToPlay/Bilder_WhatToPlay/CrashBandicootMNSane.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 15 Stunden", "6", "Singleplayer", "40 Euro"),
-("BioShock Remastered", "/WhatToPlay/Bilder_WhatToPlay/BioShock.jpg", "Shooter", "PC, XBOX ONE, PS4", "ca 12 Stunden", "18", "SinglepLayer", "20 Euro"),
+("BioShock Remastered", "/WhatToPlay/Bilder_WhatToPlay/BioShock.jpg", "Shooter", "PC, XBOX ONE, PS4", "ca 12 Stunden", "18", "Singleplayer", "20 Euro"),
 ("Spyro Reignited Trilogy", "/WhatToPlay/Bilder_WhatToPlay/SpyroReignited.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 16 Stunden", "6", "Singleplayer", "40 Euro"),
 ("Yooka-Laylee", "/WhatToPlay/Bilder_WhatToPlay/YookaLaylee.png", "Jump & Run", "Pc, Nintendo Switch", "ca 15 Stunden", "6", "Singleplayer, Multiplayer", "40 Euro"),
 ("BattleBlock Theater", "/WhatToPlay/Bilder_WhatToPlay/BattleBlockTheater.jpg", "Jump & Run", "PC", "ca 10 Stunden", "12", "Singleplayer, Multiplayer", "15 Euro"),
