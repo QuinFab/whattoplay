@@ -1,5 +1,20 @@
 <?php
-require "php-config.php"
+require "php-config.php";
+
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //Mac = 'root'
+
+$userID = $_SESSION['user_id'];
+$statement = $pdo->prepare("SELECT * FROM praeferenzen WHERE user_id = :user_id");
+$result = $statement->execute(array('user_id' => $userID));
+$user = $statement->fetch();
+
+$_SESSION['Genre'] = $user['Genre'];
+$_SESSION['Plattform'] = $user['Plattform'];
+$_SESSION['zeit'] = $user['zeit'];
+$_SESSION['FSK'] = $user['FSK'];
+$_SESSION['Player'] = $user['Player'];
+$_SESSION['Budget'] = $user['Budget'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,5 +52,36 @@ require "php-config.php"
     echo "E-Mail-Adresse: " . $_SESSION["email"];
     ?>
 </p>
+<p>
+    <?php
+    echo "1: " . $_SESSION["Genre"];
+    ?>
+</p>
+<p>
+    <?php
+    echo "2: " .$_SESSION['Plattform'];
+    ?>
+</p>
+<p>
+    <?php
+    echo "3: " . $_SESSION['zeit'];
+    ?>
+</p>
+<p>
+    <?php
+    echo "4: " .$_SESSION['FSK'];
+    ?>
+</p>
+<p>
+    <?php
+    echo "5: " . $_SESSION['Player'];
+    ?>
+</p>
+<p>
+    <?php
+    echo "6: " .$_SESSION['Budget'];
+    ?>
+</p>
+
 </body>
 </html>
