@@ -41,7 +41,7 @@ VALUES ("The Witcher 3: Wild Hunt", "/WhatToPlay/Bilder_WhatToPlay/Witcher3WildH
 
 /*Insert statement für Spiele mit zwei Genres*/
 INSERT INTO Spiele (spieletitel, cover, genre1, genre2, plattform, zeit_aufwand, alterbeschraenkung, single_multiplayer, budget)
-VALUES ("The Binding of Isaac: Rebirth", "/WhatToPlay/Bilder_WhatToPlay/IsaacRebirth.jpg", "Action", "Adventure", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 5 Stunden", "16", "singleplayer, teilweise Mutliplayer", "15 Euro"),
+VALUES ("The Binding of Isaac: Rebirth", "/WhatToPlay/Bilder_WhatToPlay/IsaacRebirth.jpg", "Action", "Adventure", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 5 Stunden", "16", "Singleplayer, teilweise Mutliplayer", "15 Euro"),
 ("Fire Emblem: Three Houses", "/WhatToPlay/Bilder_WhatToPlay/FireEmblemThreeHouses.jpg", "Strategie", "Rollenspiel", "Nintendo Switch", "ca 50 Stunden", "12", "Singleplayer", "60 Euro"),
 ("Darkest Dungeon", "/WhatToPlay/Bilder_WhatToPlay/DarkestDungeon.png", "Strategie", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "50 Stunden+", "12", "Singleplayer", "40 Euro"),
 ("Fallout 4", "/WhatToPlay/Bilder_WhatToPlay/Fallout4.jpg", "Shooter", "Rollenspiel", "PC, XBOX ONE, PS4", "ca 27 Stunden", "18", "Singleplayer", "30 Euro"),
