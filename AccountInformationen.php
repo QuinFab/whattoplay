@@ -42,46 +42,50 @@ $_SESSION['Budget'] = $user['Budget'];
         <?php endif; ?>
     </ul>
 </div>
-
-<p>  <?php
-    echo "Benutzername: " . $_SESSION["user_id"];
-    ?>
-</p>
-<p>
-    <?php
-    echo "E-Mail-Adresse: " . $_SESSION["email"];
-    ?>
-</p>
-<p>
-    <?php
-    echo "1: " . $_SESSION["Genre"];
-    ?>
-</p>
-<p>
-    <?php
-    echo "2: " .$_SESSION['Plattform'];
-    ?>
-</p>
-<p>
-    <?php
-    echo "3: " . $_SESSION['zeit'];
-    ?>
-</p>
-<p>
-    <?php
-    echo "4: " .$_SESSION['FSK'];
-    ?>
-</p>
-<p>
-    <?php
-    echo "5: " . $_SESSION['Player'];
-    ?>
-</p>
-<p>
-    <?php
-    echo "6: " .$_SESSION['Budget'];
-    ?>
-</p>
-
+<div class="accountInfo">
+    <p>  <?php
+        echo "Benutzername: <br> " . $_SESSION["user_id"];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "E-Mail-Adresse: <br> " . $_SESSION["email"];
+        ?>
+    </p>
+</div>
+<div class="accountInfo">
+    <p>Präferenzen:</p>
+    <br>
+    <p>
+        <?php
+        echo "1: " . $_SESSION["Genre"];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "2: " .$_SESSION['Plattform'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "3: " . $_SESSION['zeit'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "4: " .$_SESSION['FSK'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "5: " . $_SESSION['Player'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "6: " .$_SESSION['Budget'];
+        ?>
+    </p>
+</div>
 </body>
 </html>
