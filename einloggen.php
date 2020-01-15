@@ -63,9 +63,9 @@ if (isset($errorMessage)) {
     Dein Passwort:<br>
     <input type="password" size="40" maxlength="250" name="password"><br>
 
-    <input type="submit" value="Abschicken">
+    <input class="einloggenButton" type="submit" value="Abschicken">
 </form>
 
-<button onclick="passwortVergessen()">Passwort Zurücksetzen</button>
+<button class="einloggenButton" onclick="passwortVergessen()">Passwort Zurücksetzen</button>
 </body>
 </html>

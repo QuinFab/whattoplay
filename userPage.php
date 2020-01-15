@@ -35,9 +35,9 @@ require "php-config.php";
         header('Location: http://localhost/whattoplay/einloggen.php'); exit; //Port 8888 für Mac
     }
     ?>
-    <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
-    <button id="PräferenzenÄndern" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
-    <button id="AccountDelete" onclick="achtung()"> Account löschen </button>
+    <button class="UserPageButton" onclick="redirectAccountInformation()"> Account Informationen </button>
+    <button class="UserPageButton" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
+    <button class="UserPageButton" onclick="achtung()"> Account löschen </button>
 
 </body>
 </html>
