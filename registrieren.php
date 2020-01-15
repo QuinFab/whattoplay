@@ -78,7 +78,7 @@ else
     <label for="UserMail_again"> Email-Adresse bestätigen </label>
     <input id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
     <br>
-    <button type="submit">Registrierung bestätigen</button>
+    <button id="registrierenButton" type="submit">Registrierung bestätigen</button>
 </form>
 
 </body>

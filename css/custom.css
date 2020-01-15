@@ -224,3 +224,93 @@ li {
     width: 50%;
     padding: 10px;
 }
+
+.UserPageButton {
+    display: block;
+    block-size: 60px;
+    font-size: 40px;
+    color: white;
+    background: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.UserPageButton:hover, #spielvorschlagGenerieren:hover {
+    display: block;
+    block-size: 60px;
+    font-size: 40px;
+    color: white;
+    background: darkslategray;
+    border-color: darkslategray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.UserPageButton:active, #spielvorschlagGenerieren:active {
+    display: block;
+    block-size: 60px;
+    font-size: 40px;
+    color: white;
+    background: gray;
+    border-color: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#nochEinSpielvorschlagButton{
+    color: white;
+    background: gray;
+    font-size: 20px;
+}
+
+#nochEinSpielvorschlagButton:hover{
+    color: white;
+    background: darkslategray;
+    border-color: darkslategray;
+    font-size: 20px;
+}
+
+#nochEinSpielvorschlagButton:active{
+    color: white;
+    background: gray;
+    font-size: 20px;
+}
+
+.einloggenButton, #registrierenButton{
+    color: white;
+    background: gray;
+    font-size: 20px;
+}
+
+.einloggenButton:hover, #registrierenButton:hover{
+    color: white;
+    background: darkslategray;
+    border-color: darkslategray;
+    font-size: 20px;
+}
+
+.einloggenButton:active, #registrierenButton:active{
+    color: white;
+    background: gray;
+    font-size: 20px;
+}
+
+
