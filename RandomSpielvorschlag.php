@@ -95,6 +95,9 @@ $beschreibung = $statement10->fetch();
             <div id="Spielebeschreibung">
                 <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> </br> <?php echo $beschreibung[0] ?> </p>
             </div>
+            <div id="Spielebeschreibung">
+                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> </br> <?php echo $beschreibung[0] ?> </p>
+            </div>
 
         </li>
     </ul>
