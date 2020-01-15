@@ -194,7 +194,10 @@ li {
 }
 
 #SpielVorschlag {
-
     text-align: center;
 }
 
+#logoutIcon{
+    height: 24px;
+    width: 24px;
+}
