@@ -57,3 +57,7 @@ function SpielevorschlagGenerieren(){
 function spielvorschlagDislike(){
 
 }
+
+function seitenReloadFuerNeueSpielausgabe() {
+    location.reload();
+}

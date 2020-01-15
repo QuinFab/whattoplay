@@ -73,9 +73,12 @@ $budget = $statement9->fetch();
                 <p> Singleplayer/Multiplayer: <?php echo $single_multiplayer[0] ?> </p>
                 <p> Offizieller Preis: <?php echo $budget[0] ?> </p>
                 <p> Kurze Beschreibung: [PHP SPIELEBESCHREIBUNG] </p>
+                <button id="nochEinSpielvorschlagButton" onclick="seitenReloadFuerNeueSpielausgabe()"> Noch ein Spiel </button>
             </div>
+
         </li>
     </ul>
+
 </div>
 
 </body>
