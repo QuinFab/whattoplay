@@ -85,20 +85,20 @@ if (isset($_POST['Genre'])) {
         <input name="Plattform" value="Egal" type="radio" checked>Egal <br>
 
         <label id="Lable" for="ZeitlicherAufwand">Zeitlicher Aufwand </label> <br>
-        <input name="ZeitlicherAufwand" value="5Stunden" type="radio">bis zu 5 Stunden <br>
-        <input name="ZeitlicherAufwand" value="10Stunden" type="radio">bis zu 10 Stunden <br>
-        <input name="ZeitlicherAufwand" value="20Stunden" type="radio">bis zu 20 Stunden <br>
-        <input name="ZeitlicherAufwand" value="30Stunden" type="radio">bis zu 30 Stunden <br>
-        <input name="ZeitlicherAufwand" value="50Stunden" type="radio">bis zu 50 Stunden <br>
-        <input name="ZeitlicherAufwand" value="50+Stunden" type="radio">mehr als 50 Stunden <br>
+        <input name="ZeitlicherAufwand" value="5" type="radio">bis zu 5 Stunden <br>
+        <input name="ZeitlicherAufwand" value="10" type="radio">bis zu 10 Stunden <br>
+        <input name="ZeitlicherAufwand" value="20" type="radio">bis zu 20 Stunden <br>
+        <input name="ZeitlicherAufwand" value="30" type="radio">bis zu 30 Stunden <br>
+        <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
+        <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="Egal" type="radio" checked>Egal <br>
 
         <label id="Lable" for="Altersbeschränkung">Altersbeschränkung </label> <br>
-        <input name="Altersbeschraenkung" value="FSK0" type="radio">FSK 0 <br>
-        <input name="Altersbeschraenkung" value="FSK6" type="radio">FSK 6 <br>
-        <input name="Altersbeschraenkung" value="FSK12" type="radio">FSK 12 <br>
-        <input name="Altersbeschraenkung" value="FSK16" type="radio">FSK 16 <br>
-        <input name="Altersbeschraenkung" value="FSK18" type="radio">FSK 18 <br>
+        <input name="Altersbeschraenkung" value="0" type="radio">FSK 0 <br>
+        <input name="Altersbeschraenkung" value="6" type="radio">FSK 6 <br>
+        <input name="Altersbeschraenkung" value="12" type="radio">FSK 12 <br>
+        <input name="Altersbeschraenkung" value="16" type="radio">FSK 16 <br>
+        <input name="Altersbeschraenkung" value="18" type="radio">FSK 18 <br>
         <input name="Altersbeschraenkung" value="Egal" type="radio" checked>Egal <br>
 
         <label id="Lable" for="Single/Multiplayer">Single/Multiplayer </label> <br>
@@ -106,12 +106,12 @@ if (isset($_POST['Genre'])) {
         <input name="SingelMulti" value="Multiplayer" type="radio" checked>Multiplayer <br>
 
         <label id="Lable" for="Budget">Budget </label> <br>
-        <input name="Budget" value="5Euro" type="radio">Von 0€ bis zu 5€ <br>
-        <input name="Budget" value="10Euro" type="radio">Von 5€ bis zu 10€ <br>
-        <input name="Budget" value="20Euro" type="radio">Von 10€ bis zu 20€ <br>
-        <input name="Budget" value="40Euro" type="radio">Von 20€ bis zu 40€ <br>
-        <input name="Budget" value="60Euro" type="radio">Von 40€ bis zu 60€ <br>
-        <input name="Budget" value="Egal" type="radio" checked>Egal <br>
+        <input name="Budget" value="5" type="radio">Von 0€ bis zu 5€ <br>
+        <input name="Budget" value="10" type="radio">Von 5€ bis zu 10€ <br>
+        <input name="Budget" value="20" type="radio">Von 10€ bis zu 20€ <br>
+        <input name="Budget" value="40" type="radio">Von 20€ bis zu 40€ <br>
+        <input name="Budget" value="60" type="radio">Von 40€ bis zu 60€ <br>
+        <input name="Budget" value="9999" type="radio" checked>Egal <br>
         <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
         </button>
     </form>

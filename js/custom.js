@@ -50,12 +50,15 @@ function PraeferenzenAbschicken(){
 }
 
 function SpielevorschlagGenerieren(){
-    window.location.href = "spielvorschlag.php"
+    window.location.href = "RandomSpielvorschlag.php"
     //FUNKTION DAMIT SPIEL AUCH WIRKICH GENERIERT WIRD
 }
 
-function spielvorschlagDislike(){
-
+function gotoRandom(){
+    window.location.href = "RandomSpielvorschlag.php";
+}
+function gotoUser(){
+    window.location.href = "UserSpielvorschlag.php";
 }
 
 function seitenReloadFuerNeueSpielausgabe() {
