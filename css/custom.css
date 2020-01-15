@@ -153,6 +153,18 @@ body {
     margin-left: 15%;
 }
 
+#Spieledaten {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 25px;
+    float: left;
+    padding: 0 5px 5px;
+    margin-top: -0.0%;
+    width: 500px;
+}
+
 #Spielebeschreibung {
     border-style: solid;
     border-color: black;
@@ -162,12 +174,17 @@ body {
     float: left;
     padding: 0 5px 5px;
     margin-top: -0.0%;
+    width: 500px;
 }
 
-#Spielebeschreibung p {
+#kurzeBeschreibung{
+    text-align: center;
+}
+
+/*#Spielebeschreibung p {
     align-content: center;
     display: flex;
-}
+}*/
 
 /*
 #allePräferenzen{
