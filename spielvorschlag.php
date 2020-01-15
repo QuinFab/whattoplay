@@ -1,4 +1,5 @@
 <?php
+require "php-config.php";
 $pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
 
 $zufall = rand(1,29);
