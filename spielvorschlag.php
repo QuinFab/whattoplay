@@ -39,7 +39,7 @@ $statement9 = $pdo->prepare("select budget from spiele where spiel_id = $zufall"
 $result = $statement9->execute();
 $budget = $statement9->fetch();
 
-$statement10 = $pdo->prepare("select beschreibung from spiele where spiel_id = $zufall");
+$statement10 = $pdo->prepare("select beschreibung from spiele where spiel_id = '8'");
 $result = $statement10->execute();
 $beschreibung = $statement10->fetch();
 ?>
