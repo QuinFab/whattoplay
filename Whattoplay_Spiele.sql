@@ -48,7 +48,7 @@ VALUES ("The Binding of Isaac: Rebirth", "/WhatToPlay/Bilder_WhatToPlay/IsaacReb
 ("Batman Arkham Knight", "/WhatToPlay/Bilder_WhatToPlay/BatmanArkhamKnight.jpg", "Adventure", "Rollenspiel", "PC, XBOX ONE, PS4", "ca 16 Stunden", "16", "Singleplayer", "15 Euro"),
 ("Dark Souls 3", "/WhatToPlay/Bilder_WhatToPlay/DarkSouls3.jpg", "Rollenspiel", "Action", "PC, XBOX ONE, PS4", "ca 33 Stunden", "16", "Singleplayer, Multiplayer", "60 Euro"),
 ("Monster Hunter World", "/WhatToPlay/Bilder_WhatToPlay/MonsterHunterWorld.jpg", "Action", "Rollenspiel", "PC, XBOX ONE, PS4", "ca 50 Stunden", "12", "Singleplayer, Multiplayer", "60 Euro"),
-("The Legend of Zelda Breath of the Wild", "/WhatToPlay/Bilder_WhatToPlay/ZeldaBOTW.webp", "Adventure", "Rollenspiel", "Nintendo Switch", "ca 50 Stunden", "12", "Singleplayer", "55 Euro"),
+("The Legend of Zelda Breath of the Wild", "/WhatToPlay/Bilder_WhatToPlay/ZeldaBOTW.jpg", "Adventure", "Rollenspiel", "Nintendo Switch", "ca 50 Stunden", "12", "Singleplayer", "55 Euro"),
 ("Pokemon Schild und Schwert", "/WhatToPlay/Bilder_WhatToPlay/PokemonSchwertSchild.jpg", "Rollenspiel", "Adventure", "Nintendo Switch", "ca 30 Stunden", "6", "Singleplayer, teilweise Multiplayer", "60 Euro"),
 ("Sekiro Shadows Die Twice", "/WhatToPlay/Bilder_WhatToPlay/Sekiro.jpg", "Action", "Adventure", "PC, XBOX ONE, PS4", "ca 30 Stunden", "18", "Singleplayer", "60 Euro"),
 ("For the King", "/WhatToPlay/Bilder_WhatToPlay/FitForAKing.jpg", "Strategie", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 12 Stunden", "12", "Singleplayer, Multiplayer", "20 Euro");
