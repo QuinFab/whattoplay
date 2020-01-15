@@ -36,19 +36,21 @@ button {
     color: white;
     background: gray;
 }
-#spielvorschlagGenerieren{
+
+#spielvorschlagGenerieren {
     display: block;
     block-size: 60px;
     font-size: 40px;
     color: white;
     background: gray;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
 }
+
 form {
     text-align: center;
     margin: 20px;
@@ -74,18 +76,20 @@ form {
     font-size: 30px;
     padding: 2px;
 }
-body{
-    margin:0;
+
+body {
+    margin: 0;
     font-family: "arial", serif;
-    text-shadow:  1px  1px 1px black,
+    text-shadow: 1px 1px 1px black,
     1px -1px 1px black,
-    -1px  1px 1px black,
+    -1px 1px 1px black,
     -1px -1px 1px black;
     color: white;
     width: 100%;
     min-height: 100%;
 }
-#Navbar{
+
+#Navbar {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -95,27 +99,31 @@ body{
     position: sticky;
     top: 0;
 }
-#einloggen, #registrieren, #account{
+
+#einloggen, #registrieren, #account {
     float: right;
 }
-.navbar{
+
+.navbar {
     font-size: 24px;
     color: white;
     display: block;
     text-decoration: none;
     text-align: center;
     padding: 16px 10px;
-    float:left;
+    float: left;
 }
 
-.navbar:hover{
+.navbar:hover {
     background-color: #005cbf;
     border-color: #005cbf;
 }
-.navbar:active{
+
+.navbar:active {
     background-color: #5a6268;
     border-color: #5a6268;
 }
+
 #PräferenzenAbschicken {
     font-size: 30px;
     float: left;
@@ -129,24 +137,31 @@ body{
 
 }
 
-#HeaderPräferenzen{
-    color:white;
+#HeaderPräferenzen {
+    color: white;
 }
 
-#Spielecover{
-    height: 600px;
-    width: 700px;
-
+#Spielecover {
+    height: 800px; /* Minimum! */
+    width: 600px; /* Minimum! */
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 15%;
 }
-#Spielebeschreibung{
+
+#Spielebeschreibung {
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: lightgrey;
-    margin: 20px;
-    display: inline-block;
+    background-color: red;
+    margin: 25px;
+    float: left;
     padding: 0 5px 5px;
+}
 
+#Spielebeschreibung p {
+    align-content: center;
+    display: flex;
 }
 
 /*
@@ -160,12 +175,22 @@ body{
 }
 */
 
-li{
+li {
     list-style-type: none;
     text-align: center;
 }
 
-#Spieletitel{
+#Spieletitel {
     text-decoration: underline;
     font-size: 50px;
 }
+
+#genre {
+    margin-top: 25px;
+}
+
+#SpielVorschlag {
+
+    text-align: center;
+}
+
