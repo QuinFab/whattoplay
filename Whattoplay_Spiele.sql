@@ -26,7 +26,7 @@ VALUES ("The Witcher 3: Wild Hunt", "/WhatToPlay/Bilder_WhatToPlay/Witcher3WildH
 ("Yooka-Laylee", "/WhatToPlay/Bilder_WhatToPlay/YookaLaylee.png", "Jump & Run", "Pc, Nintendo Switch", "ca 15 Stunden", "6", "Singleplayer, Multiplayer", "40 Euro"),
 ("BattleBlock Theater", "/WhatToPlay/Bilder_WhatToPlay/BattleBlockTheater.jpg", "Jump & Run", "PC", "ca 10 Stunden", "12", "Singleplayer, Multiplayer", "15 Euro"),
 ("Final Fantasy X/X-2HD Remaster", "/WhatToPlay/Bilder_WhatToPlay/FinalFantasyXHDRemaster.jpeg", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 55 Stunden", "12", "Singleplayer", "30 Euro"),
-("Super Smash Bros. Ultimate", "/WhatToPlay/Bilder_WhatToPlay/SmashBros.jpg", "Action", "Nintendo Switch", "ca 22 Stunden", "12", "Singleplayer, Multiplayer", "55 Euro"),
+("Super Smash Bros. Ultimate", "/WhatToPlay/Bilder_WhatToPlay/SmashBros.png", "Action", "Nintendo Switch", "ca 22 Stunden", "12", "Singleplayer, Multiplayer", "55 Euro"),
 ("A Hat in Time", "/WhatToPlay/Bilder_WhatToPlay/AHatInTime.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "ca 9 Stunden", " 12", "Singleplayer, Multiplayer", "30 Euro"),
 ("GTA V", "/WhatToPlay/Bilder_WhatToPlay/GTA5.jpg", "Action", "PC, XBOX ONE, PS4", "ca 30 Stunden", "18", "Singleplayer, teilweise Multiplayer", "30 Euro"),
 ("Overwatch", "/WhatToPlay/Bilder_WhatToPlay/Overwatch.jpg", "Shooter", "PC, XBOX ONE, PS4, Nintendo Switch", "/", "16", "Multiplayer", "20 Euro"),
