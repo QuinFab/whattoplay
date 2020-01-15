@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.9.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Erstellungszeit: 20. Nov 2019 um 16:43
+- Server-Version: 10.4.8-MariaDB
+- PHP-Version: 7.1.32
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="iba" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `user_id` varchar(40) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+                  `email` varchar(40) NOT NULL,
+                  `password` varchar(60) NOT NULL,
+                  PRIMARY KEY (`user_id`),
+                  UNIQUE KEY `e-mail` (`email`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="Spiele">
+                CREATE TABLE `Spiele`(
+                `spiel_id` int unique auto_increment,
+                `spieletitel` varchar(100),
+                `gover` varchar(600),
+                `genre` varchar(100),
+                `plattform` varchar(100),
+                `zeit_aufwand` varchar(100),
+                `alterbeschraenkung` varchar(7),
+                `single_multiplayer` varchar(100),
+                `budget` double,
+                `beschreibung` varchar(9000),
+                PRIMARY KEY (`spiel_id`)
+                )ENGINE=InnoDB DEFAULT CHARSET?utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Datenbank: 'iba'
+    -->
+    <database name="iba">
+        <!-- Tabelle user -->
+        <table name="user">
+            <column name="user_id">
+
+            </column>
+            <column name="email">
+
+            </column>
+            <column name="password">$2y$12$MrIsYVOeo/2dHXi7.vjsCOcqyIfWSin9NCcqHmoRkbP.w1fQ2z2G2</column>
+        </table>
+    </database>
+</pma_xml_export>

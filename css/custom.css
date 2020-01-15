@@ -1,16 +1,28 @@
+html {
+    background: url("https://images2.alphacoders.com/713/thumb-1920-713713.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+}
+
 h1 {
     font-size: 40px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 30px;
     text-align: center;
-    padding-top: 40px ;
+    padding-top: 40px;
 }
+
 p {
     text-align: center;
 }
+
 button {
     display: block;
     margin: 0 auto;
@@ -24,11 +36,174 @@ button {
     color: white;
     background: gray;
 }
+
+#spielvorschlagGenerieren {
+    display: block;
+    block-size: 60px;
+    font-size: 40px;
+    color: white;
+    background: gray;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+}
+
 form {
     text-align: center;
+    margin: 20px;
+}
+
+#FormGenre, #FormAlter, #FormBudget, #FormPlattform, #FormSingleMulti, #FormZeit {
+    margin: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    float: left;
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 20px;
+
 }
 
 #registrierungBestätigen {
     margin-top: 20px;
 }
 
+#Lable {
+    font-size: 30px;
+    padding: 2px;
+}
+
+body {
+    margin: 0;
+    font-family: "arial", serif;
+    text-shadow: 1px 1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black,
+    -1px -1px 1px black;
+    color: white;
+    width: 100%;
+    min-height: 100%;
+}
+
+#willkommen{
+    alignment: center;
+}
+
+#Navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #0c5460;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+#einloggen, #registrieren, #account, #logout{
+    float: right;
+}
+
+.navbar {
+    font-size: 24px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 10px;
+    float: left;
+}
+
+.navbar:hover {
+    background-color: #005cbf;
+    border-color: #005cbf;
+}
+
+.navbar:active {
+    background-color: #5a6268;
+    border-color: #5a6268;
+}
+
+#PräferenzenAbschicken {
+    font-size: 30px;
+    float: left;
+    position: relative;
+    margin: 20px;
+    width: 15%;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+
+}
+
+#HeaderPräferenzen {
+    color: white;
+}
+
+#Spielecover {
+    height: 800px; /* Minimum! */
+    width: 600px; /* Minimum! */
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 15%;
+}
+
+#Spielebeschreibung {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+    margin: 25px;
+    float: left;
+    padding: 0 5px 5px;
+    margin-top: -0.0%;
+}
+
+#Spielebeschreibung p {
+    align-content: center;
+    display: flex;
+}
+
+/*
+#allePräferenzen{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+*/
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#Spieletitel {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+#genre {
+    margin-top: 25px;
+}
+
+#SpielVorschlag {
+    text-align: center;
+}
+
+#logoutIcon{
+    height: 24px;
+    width: 24px;
+}
+#userDaten{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
