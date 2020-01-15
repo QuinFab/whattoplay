@@ -161,7 +161,7 @@ body {
     margin: 25px;
     float: left;
     padding: 0 5px 5px;
-    margin-top: 0.1%;
+    margin-top: -0.0%;
 }
 
 #Spielebeschreibung p {
@@ -201,4 +201,9 @@ li {
 #logoutIcon{
     height: 24px;
     width: 24px;
+}
+#userDaten{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }

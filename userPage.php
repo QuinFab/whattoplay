@@ -29,11 +29,10 @@ require "php-config.php";
 <h1>
     <?php
     if (isset($_SESSION['user_id'])) {
-        echo "Herzlich Willkommen " . $_SESSION['user_id'];
+        echo "Herzlich Willkommen: " . $_SESSION['user_id'] . "!";
     } else {
         Print "Bitte erst einloggen";
-        header('Location: http://localhost/whattoplay/einloggen.php');
-        exit; //Port 8888 für Mac
+        header('Location: http://localhost/whattoplay/einloggen.php'); exit; //Port 8888 für Mac
     }
     ?>
     <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
