@@ -8,11 +8,11 @@ cover varchar(600) ,
 genre1 varchar(100),
 genre2 varchar(100),
 plattform varchar(100),
-zeit_aufwand int,
-alterbeschraenkung int,
+zeit_aufwand int(100),
+alterbeschraenkung int(100),
 single_multiplayer varchar(100),
-budget int,
-beschreibung varchar(69420),
+budget int(100),
+beschreibung text(69420),
 PRIMARY KEY (spiel_id)
 );
 
@@ -20,7 +20,7 @@ PRIMARY KEY (spiel_id)
 INSERT INTO Spiele (spieletitel, cover, genre1, plattform, zeit_aufwand, alterbeschraenkung, single_multiplayer, budget, beschreibung)
 VALUES ("The Witcher 3: Wild Hunt", "/WhatToPlay/Bilder_WhatToPlay/Witcher3WildHunt.jpg", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "50", "18", "Singleplayer", "40", "In diesem Spiel basierend auf einer Bücherreihe, steht in der Hauptrolle Der Hexer Geralt von Riva. Dieser ist auf der Suche nach seiner Ziehtochter Ciri, sie flieht vor der „Wilden Jagd“, in einer Welt gefüllt von Monstern und Problemen. Dabei muss sich Geralt dem alltäglichen Rassismus stellen."),
 ("XCOM: Enemy Unknown", "/WhatToPlay/Bilder_WhatToPlay/XCOMEnemyUnknown.jpg", "Strategie", "PC", "30", "16", "Singleplayer, Multiplayer", "30", "Übernimm als Kommandant einer Spezialeinheit die Führung gegen Aliens in diesem glorreichen rundenbasierten Strategiespiel. Dabei musst du dich nicht nur in spannenden Kämpfen beweisen, sondern auch die Basis verwalten und dabei schwierige Entscheidungen treffen. Währenddessen kann die Welt auch in Panik verfallen, sofern man nicht die richtigen Entscheidungen trifft…"),
-("Crash Bandicoot N. Sane Trilogy", "/WhatToPlay/Bilder_WhatToPlay/CrashBandicootMNSane.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "15", "6", "Singleplayer", "40 Euro", "Die Trilogie, neu aufgemacht! Erlebe alle drei Klassiker in wunderschöner Grafik und flüssigem Gameplay. Springe durch viele verschiedene Level, quer durch die Spiele hindurch und erlebe die Nostalgie."),
+("Crash Bandicoot N. Sane Trilogy", "/WhatToPlay/Bilder_WhatToPlay/CrashBandicootMNSane.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "15", "6", "Singleplayer", "40", "Die Trilogie, neu aufgemacht! Erlebe alle drei Klassiker in wunderschöner Grafik und flüssigem Gameplay. Springe durch viele verschiedene Level, quer durch die Spiele hindurch und erlebe die Nostalgie."),
 ("BioShock Remastered", "/WhatToPlay/Bilder_WhatToPlay/BioShock.jpg", "Shooter", "PC, XBOX ONE, PS4", "12", "18", "Singleplayer", "20", "Ein Shooter Klassiker neu aufgelegt! Erlebe die dunkle und düstere Atmosphäre der untergegangenen Stadt Rapture, damals ein Paradies für die gehobene Schicht, heute eine versunkene Stadt, in der einige Gefahren lauern. Lerne dabei die Little Sisters und die Big Daddys kennen und erfahre, was mit Rapture passiert ist."),
 ("Spyro Reignited Trilogy", "/WhatToPlay/Bilder_WhatToPlay/SpyroReignited.jpg", "Jump & Run", "PC, XBOX ONE, PS4, Nintendo Switch", "16", "6", "Singleplayer", "40", "Sei Spyro, der ikonische lila Drache, der in Drei Spielen seine Verwandenten retten muss. Springe dabei durch verschiedene Level, spucke Feuer und fliege! Dabei gibt es auch viel zu sammeln und zu entdecken, sodass das Sammlerherz höherschlägt."),
 ("Yooka-Laylee", "/WhatToPlay/Bilder_WhatToPlay/YookaLaylee.png", "Jump & Run", "PC, Nintendo Switch", "15", "6", "Singleplayer, Multiplayer", "40", "Ein Jump & Run mit viel Sammelgegenständen. Schlüpfe in die Rolle von Yooka, der grünen Eidechse und erkunde mithilfe von Laylee, der lilanen Fledermaus, die verschiedenen Welten. Dabei erwarten dich einige Bosskämpfe und Verbesserungen, die das Spielprinzip noch weiter ergänzen."),
@@ -50,7 +50,7 @@ VALUES ("The Binding of Isaac: Rebirth", "/WhatToPlay/Bilder_WhatToPlay/IsaacReb
 ("Monster Hunter World", "/WhatToPlay/Bilder_WhatToPlay/MonsterHunterWorld.jpg", "Action", "Rollenspiel", "PC, XBOX ONE, PS4", "50", "12", "Singleplayer, Multiplayer", "60", "Jäger, bist du bereit die neue Welt zu erkunden? Jage epische Kreaturen, verbessere deine Ausrüstung, stelle neue her. Jage mit bis zu 4 Spielern ein Monster! Sammle immer mehr Ressourcen und stelle dir die beste Ausrüstung her, denn die wirst du brauchen! Bezwinge Drachenälteste und erkunde die Mysteriösen Ereignisse in der neuen Welt."),
 ("The Legend of Zelda Breath of the Wild", "/WhatToPlay/Bilder_WhatToPlay/ZeldaBOTW.jpg", "Adventure", "Rollenspiel", "Nintendo Switch", "50", "12", "Singleplayer", "55", "In diesem Spiel kann man ansich machen was man will denn es gibt dir einen großen Baukasten wie die verschiedenen Module die die Hauptitems aus den alten Spielen ersetzen und der Offenen Story denn man wird direkt ins Spiel geworfen und muss sich erstmal Zurecht finden, alles ist eine Entdeckung und wenn man ganz Mutig ist kann man direkt zum Endboss und versuchen ihn zu Besiegen."),
 ("Pokemon Schild und Schwert", "/WhatToPlay/Bilder_WhatToPlay/PokemonSchwertSchild.jpg", "Rollenspiel", "Adventure", "Nintendo Switch", "30", "6", "Singleplayer, teilweise Multiplayer", "60", "Es ist das neuste Spiel der Pokemon Reihe und findet in der Galar-Region statt. In diesem Teil wird das bekannte Schema etwas durchbrochen. Man besucht zwar immer noch Arenen und gewinnt die Orden allerdings tritt man am Ende nicht mehr gegen die Top Vier an sondern nimmt an einem Turnier teil und der Gewinner darf dann gegen den Champ Kämpfen."),
-("Sekiro Shadows Die Twice", "/WhatToPlay/Bilder_WhatToPlay/Sekiro.jpg", "Action", "Adventure", "PC, XBOX ONE, PS4", "ca 30 Stunden", "18", "Singleplayer", "60 Euro", "In diesem dynamischen Abenteuer bist du in der Rolle eines Samurais, der sich gegen massenhaft Gegner beweisen muss. Dabei wird es vorkommen, dass du stirbst, aber nur Mut! Kontere deine Gegner und erkunde die Asiatische Fantasiewelt."),
+("Sekiro Shadows Die Twice", "/WhatToPlay/Bilder_WhatToPlay/Sekiro.jpg", "Action", "Adventure", "PC, XBOX ONE, PS4", "30", "18", "Singleplayer", "60", "In diesem dynamischen Abenteuer bist du in der Rolle eines Samurais, der sich gegen massenhaft Gegner beweisen muss. Dabei wird es vorkommen, dass du stirbst, aber nur Mut! Kontere deine Gegner und erkunde die Asiatische Fantasiewelt."),
 ("For the King", "/WhatToPlay/Bilder_WhatToPlay/FitForAKing.jpg", "Strategie", "Rollenspiel", "PC, XBOX ONE, PS4, Nintendo Switch", "12", "12", "Singleplayer, Multiplayer", "20", "Es fühlt sich wie ein Pen and Paper an. Am Anfang sucht man sich eine Questreihe aus von denen es mehrere gibt, entweder man macht Für den König oder ein Tiefsee Abenteuer oder man begibt sich auf ein Abenteuer im Schnee. Obwohl es momentan wenige Abenteuer gibt, hat das Spiel genug zu bieten denn meistens schafft man die Abenteuer im ersten Anlauf gar nicht und versucht es dann darum immer wieder.");
 
 
