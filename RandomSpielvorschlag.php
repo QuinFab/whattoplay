@@ -38,7 +38,6 @@ $single_multiplayer = $statement8->fetch();
 $statement9 = $pdo->prepare("select budget from spiele where spiel_id = $zufall");
 $result = $statement9->execute();
 $budget = $statement9->fetch();
-
 ?>
 
 <html lang="en">
@@ -73,7 +72,7 @@ $budget = $statement9->fetch();
             <div id="spielecoverContainer"> <?php echo "<img id='Spielecover' src= $cover[0]>"; ?> </div>
         </li>
         <li>
-            <div id="Spielebeschreibung">
+            <div id="Spieledaten">
                 <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
                 <p> Genre: <?php echo $genre1[0], " ", $genre2[0]; ?> </p>
                 <p> Plattform(en): <?php echo $plattform[0] ?> </p>
@@ -88,6 +87,9 @@ $budget = $statement9->fetch();
                 <button id="nochEinSpielvorschlagButton" onclick="gotoUser()"> Generiere
                     Spiel nach meinen kriterien
                 </button>
+            </div>
+            <div id="Spielebeschreibung">
+                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> </br> <?php echo $beschreibung[0] ?> </p>
             </div>
 
         </li>
