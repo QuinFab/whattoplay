@@ -11,7 +11,7 @@ $statement2 = $pdo->prepare("select spieletitel from spiele where spiel_id = $zu
 $result = $statement2->execute();
 $spieletitel = $statement2->fetch();
 
-$statement3 = $pdo->prepare("select genre1 from spiele where spiel_id = $zufall");
+$statement3 = $pdo->prepare("select genre1 from spiele where Genre = $zufall");
 $result = $statement3->execute();
 $genre1 = $statement3->fetch();
 
