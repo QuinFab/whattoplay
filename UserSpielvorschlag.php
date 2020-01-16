@@ -80,7 +80,9 @@ $cover = $statement1->fetch();
                     Spiel nach meinen kriterien
                 </button>
             </div>
-
+            <div id="Spielebeschreibung">
+                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> <br> <?php echo $us['beschreibung'] ?> 
+            </div>
         </li>
     </ul>
 

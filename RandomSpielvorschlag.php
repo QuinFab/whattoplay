@@ -84,7 +84,6 @@ $beschreibung = $statement10->fetch();
                 <p> Altersbeschränkung: <?php echo $alterbeschraenkung[0] ?> </p>
                 <p> Singleplayer/Multiplayer: <?php echo $single_multiplayer[0] ?> </p>
                 <p> Offizieller Preis: <?php echo $budget[0] ?> </p>
-                <p> Kurze Beschreibung: [PHP SPIELEBESCHREIBUNG] </p>
                 <button id="nochEinSpielvorschlagButton" onclick="gotoRandom()"> Generiere
                     Randomspiel
                 </button>
