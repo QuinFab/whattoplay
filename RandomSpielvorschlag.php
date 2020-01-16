@@ -39,7 +39,7 @@ $statement9 = $pdo->prepare("select budget from spiele where spiel_id = $zufall"
 $result = $statement9->execute();
 $budget = $statement9->fetch();
 
-$statement10 = $pdo->prepare("select beschreibung from spiele where spiel_id = '8'");
+$statement10 = $pdo->prepare("select beschreibung from spiele where spiel_id = $zufall");
 $result = $statement10->execute();
 $beschreibung = $statement10->fetch();
 ?>
@@ -91,9 +91,6 @@ $beschreibung = $statement10->fetch();
                 <button id="nochEinSpielvorschlagButton" onclick="gotoUser()"> Generiere
                     Spiel nach meinen kriterien
                 </button>
-            </div>
-            <div id="Spielebeschreibung">
-                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> </br> <?php echo $beschreibung[0] ?> </p>
             </div>
             <div id="Spielebeschreibung">
                 <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> </br> <?php echo $beschreibung[0] ?> </p>
