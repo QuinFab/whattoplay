@@ -16,11 +16,13 @@ $_SESSION['Budget'] = $user['Budget'];*/
 
 echo $user['Genre'] . $user['Plattform'] . $user['zeit'] . $user['FSK'] . $user['Player'] . $user['Budget'];
 
-$statement32 = $pdo->prepare("SELECT * FROM (spiele) WHERE ((genre1 = :userGenre) AND (plattform = :userPlattform) AND (zeit_aufwand <= :userZeit) AND (alterbeschraenkung = :userFSK) AND (single_multiplayer = :userPlayer) AND (budget <= :userBudget))");
-
-$statement32->execute(array(':plattform' => $user['Plattform'], ':userZeit' => $user['zeit'], ':userGenre' => $user['Genre'], ':userFSK' => $user['FSK'], ':userPlayer' => $user['Player'], ':userBudget' => $user['Budget']));
+//genre1 LIKE 'Adventure' AND plattform LIKE 'Nintendo Switch' AND zeit_aufwand = 30 AND alterbeschraenkung = 6 AND single_multiplayer LIKE 'Singelplayer' AND budget = 60;
+$query = "SELECT * FROM (spiele) WHERE ((genre1 LIKE :userGenre) AND (plattform LIKE :userPlattform) AND (zeit_aufwand <= :userZeit) AND (alterbeschraenkung LIKE :userFSK) AND (single_multiplayer LIKE :userPlayer) AND (budget <= :userBudget))";
+echo $query;
+$statement32 = $pdo->prepare($query);
+$statement32->execute(array(':userPlattform' => $user['Plattform'], ':userZeit' => $user['zeit'], ':userGenre' => $user['Genre'], ':userFSK' => $user['FSK'], ':userPlayer' => $user['Player'], ':userBudget' => $user['Budget']));
 while($us = $statement32->fetch()) {
-    print_r( $us['plattform'] . " " . $us['zeit'] . " " . $us['Genre'] . " " . $us['FSK'] . " " . $us['Player'] . " " . $us['Budget']);
+    echo $us['plattform'] . " " . $us['zeit'] . " " . $us['Genre'] . " " . $us['FSK'] . " " . $us['Player'] . " " . $us['Budget'];
 }
 
 $zufall = $us['spiel_id'];
