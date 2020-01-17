@@ -62,7 +62,7 @@ $cover = $statement1->fetch();
                 <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
                 <p> Genre: <?php echo $us['genre1'] . " " . $us['genre2']; ?> </p>
                 <p> Plattform(en): <?php echo $us['plattform'] ?> </p>
-                <p> Spielzeit der Hauptgeschichte: <?php echo $us['zeit_aufwand'] ?> </p>
+                <p> Spielzeit der Hauptgeschichte: <?php echo $us['zeit_aufwand'] ?> Stunden </p>
                 <p> Altersbeschränkung: <?php echo $us['alterbeschraenkung'] ?> </p>
                 <p> Singleplayer/Multiplayer: <?php echo $us['single_multiplayer'] ?> </p>
                 <p> Offizieller Preis: <?php echo $us['budget'] . " Euro" ?> </p>
