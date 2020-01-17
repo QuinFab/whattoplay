@@ -13,17 +13,29 @@ $_SESSION['zeit'] = $user['zeit'];
 $_SESSION['FSK'] = $user['FSK'];
 $_SESSION['Player'] = $user['Player'];
 $_SESSION['Budget'] = $user['Budget'];
-$user['Player'] = "%". $user['Player']. "%";
-$user['Plattform'] = "%".$user['Plattform']."%";
+$user['Player'] = "%" . $user['Player'] . "%";
+$user['Plattform'] = "%" . $user['Plattform'] . "%";
 
 $statement32 = $pdo->prepare("SELECT * FROM spiele WHERE single_multiplayer LIKE :userPlayer AND budget <= :userBudget AND alterbeschraenkung <= :userFSK AND zeit_aufwand <= :userZeit AND plattform LIKE :userPlattform AND genre LIKE :userGenre");
 $statement32->execute(array('userPlayer' => $user['Player'], 'userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userZeit' => $user['zeit'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
-
+$anzahl_user = $statement32->rowCount();
+echo "Es wurden $anzahl_user Spiele gefunden";
+if ($anzahl_user == 0) {
+    $testet = "SELECT * FROM spiele WHERE budget <= :userBudget AND alterbeschraenkung <= :userFSK AND plattform LIKE :userPlattform AND genre LIKE :userGenre";
+    $statement322 = $pdo->prepare("SELECT * FROM spiele WHERE budget <= :userBudget AND alterbeschraenkung <= :userFSK AND plattform LIKE :userPlattform AND genre LIKE :userGenre");
+    $statement322->execute(array('userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
+    $anzahl_user = $statement322->rowCount();
+    echo "Es wurden immernoch $anzahl_user Spiele gefunden";
+    $us = $statement322->fetch();
+}
+else{
 $us = $statement32->fetch();
+}
 $zufall = $us['spiel_id'];
 $statement1 = $pdo->prepare("SELECT cover FROM spiele WHERE spiel_id = $zufall");
 $result = $statement1->execute();
 $cover = $statement1->fetch();
+
 ?>
 
 <html lang="en">
@@ -51,8 +63,10 @@ $cover = $statement1->fetch();
         <?php endif; ?>
     </ul>
 </div>
+
 <div id="SpielVorschlag">
     <ul>
+
         <p id="Spieletitel"><?php echo $us['spieletitel'] ?></p>
         <li>
             <div id="spielecoverContainer"> <?php echo "<img id='Spielecover' src= $cover[0] >"; ?> </div>
@@ -73,6 +87,7 @@ $cover = $statement1->fetch();
                     Userspiel
                 </button>
             </div>
+
             <div id="Spielebeschreibung">
                 <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> <br> <?php echo $us['beschreibung'] ?>
             </div>
