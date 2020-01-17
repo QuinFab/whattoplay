@@ -16,7 +16,7 @@ $_SESSION['Budget'] = $user['Budget'];
 $user['Player'] = "%". $user['Player']. "%";
 $user['Plattform'] = "%".$user['Plattform']."%";
 
-$statement32 = $pdo->prepare("SELECT * FROM spiele WHERE single_multiplayer LIKE :userPlayer AND budget <= :userBudget AND alterbeschraenkung <= :userFSK AND zeit_aufwand <= :userZeit AND plattform LIKE :userPlattform AND genre1 LIKE :userGenre");
+$statement32 = $pdo->prepare("SELECT * FROM spiele WHERE single_multiplayer LIKE :userPlayer AND budget <= :userBudget AND alterbeschraenkung <= :userFSK AND zeit_aufwand <= :userZeit AND plattform LIKE :userPlattform AND genre LIKE :userGenre");
 $statement32->execute(array('userPlayer' => $user['Player'], 'userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userZeit' => $user['zeit'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
 
 $us = $statement32->fetch();

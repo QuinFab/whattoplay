@@ -17,6 +17,7 @@ if (isset($_GET['login'])) {
         $_SESSION['timestamp'] = new DateTime();
         $_SESSION['email'] = $user['email'];
         $_SESSION['password'] = $user['password'];
+        $_SESSION['erstelltam'] = $user['erstelltam'];
 
         header("Location: http://localhost/whattoplay/userPage.php");
         $userid = $_SESSION['user_id'];

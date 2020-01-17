@@ -52,6 +52,11 @@ $_SESSION['Budget'] = $user['Budget'];
         echo "E-Mail-Adresse: <br> " . $_SESSION["email"];
         ?>
     </p>
+    <p>
+        <?php
+        echo "Mitglied seit: <br> " . $_SESSION["erstelltam"];
+        ?>
+    </p>
 </div>
 <div class="accountInfo">
     <p>Präferenzen:</p>

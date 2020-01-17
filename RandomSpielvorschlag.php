@@ -41,7 +41,8 @@ $budget = $statement9->fetch();
 
 $statement10 = $pdo->prepare("select beschreibung from spiele where spiel_id = $zufall");
 $result = $statement10->execute();
-$beschreibung = $statement10->fetch();
+$beschreibung = $statement10->fetch()
+
 ?>
 
 <html lang="en">
