@@ -67,9 +67,9 @@ if (isset($_POST['Genre'])) {
         <input name="Genre" value="Jump & Run" type="radio">Jump & Run <br>
         <input name="Genre" value="Shooter" type="radio">Shooter <br>
         <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
-    </div>
-    <div id="Forms">
-        <label id="Plattform" for="Plattform">Plattform </label> <br>
+        </div>
+        <div id="Forms">
+        <label id="Lable" for="Plattform">Plattform </label> <br>
         <input name="Plattform" value="PC" type="radio" checked>PC <br>
         <input name="Plattform" value="PS4" type="radio">PS4 <br>
         <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
