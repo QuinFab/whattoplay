@@ -273,23 +273,21 @@ li {
     background: gray;
 
 }
-
-#formUserdaten {
+/*form {
+    text-align: center;
+    margin: 20px;
+}*/
+#formUserdaten{
     text-align: center;
     margin: 20px;
 }
-
-#registrierenButton {
+#registrierenButton{
     color: white;
     background: gray;
     font-size: 30px;
     margin-top: 3%;
 }
 
-#einloggenForm{
-    text-align: center;
-    margin: 20px;
-}
 #Forms {
     border-style: solid;
     border-color: black;
@@ -301,7 +299,19 @@ li {
     background-color: lightgrey;
     font-size: 20px;
 }
-#passwortZurucksetzen{
+/*#UserPraeferenzen{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+    float: left;
+    padding: 0 5px 5px;
+    margin-top: -0.0%;
+    width: 500px;
+    text-align: center;
+    margin: 20px;
+}*/
+#einloggenForm{
     text-align: center;
     margin: 20px;
 }
@@ -323,27 +333,15 @@ li {
     border-color: black;
     border-width: 3px;
     background-color: rgba(255,255,255,0.5);
-    margin-left: auto;
+    padding: 0 5px 5px;
     margin-right: auto;
-    min-width: 180px;
-    height: 200px;
+    margin-left: auto;
     text-align: center;
-    float: left;
+    width: 300px;
+    height: 200px;
 }
 #RegistrierenButtondiv{
     text-align: center;
-}
-#PräferenzenAbschickendiv{
-    text-align: center;
-}
-#allePräferenzen{
-    text-align: center;
-    align-content: center;
-}
-#UserPraeferenzen{
-    text-align: center;
-    align-content: center;
-    display: inline-block;
 }
 
 
