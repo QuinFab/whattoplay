@@ -36,7 +36,6 @@ if (isset($_GET['login'])) {
     <script src="js/custom.js"></script>
 </head>
 <body>
-
 <div>
     <ul id="Navbar">
         <?php if (isset($_SESSION["user_id"])) : ?>
@@ -50,12 +49,14 @@ if (isset($_GET['login'])) {
         <?php endif; ?>
     </ul>
 </div>
+
 <?php
 if (isset($errorMessage)) {
     echo $errorMessage;
 }
 ?>
 
+<div id="einloggenForm">
 <form action="?login=1" method="post">
     E-Mail:<br>
     <input type="email" size="40" maxlength="250" name="email"><br><br>
@@ -65,7 +66,7 @@ if (isset($errorMessage)) {
 
     <input class="einloggenButton" type="submit" value="Abschicken">
 </form>
-
+</div>
 <button class="einloggenButton" onclick="passwortVergessen()">Passwort Zurücksetzen</button>
 </body>
 </html>

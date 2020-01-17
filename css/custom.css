@@ -23,10 +23,10 @@ p {
     text-align: center;
 }
 
-button {
+/*button {
     display: block;
     margin: 0 auto;
-}
+}*/
 
 #redirectRegistrieren, #redirectEinloggen {
     display: block;
@@ -52,7 +52,7 @@ button {
 }
 
 
-#Forms /* #FormAlter, #FormBudget, #FormPlattform, #FormSingleMulti, #FormZeit */ {
+#Forms {
     margin: 20px;
     border-style: solid;
     border-color: black;
@@ -176,22 +176,6 @@ body {
     text-align: center;
 }
 
-/*#Spielebeschreibung p {
-    align-content: center;
-    display: flex;
-}*/
-
-/*
-#allePräferenzen{
-    margin: 0;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-*/
-
 li {
     list-style-type: none;
     text-align: center;
@@ -302,25 +286,40 @@ li {
     font-size: 20px;
 }
 
-.einloggenButton, #registrierenButton{
+.einloggenButton{
     color: white;
     background: gray;
     font-size: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 .einloggenButton:hover, #registrierenButton:hover{
     color: white;
     background: darkslategray;
     border-color: darkslategray;
-    font-size: 20px;
 }
 
 .einloggenButton:active, #registrierenButton:active{
     color: white;
     background: gray;
-    font-size: 20px;
+
 }
-form {
+/*form {
+    text-align: center;
+    margin: 20px;
+}*/
+#formUserdaten{
+    text-align: center;
+    margin: 20px;
+}
+#registrierenButton{
+    color: white;
+    background: gray;
+    font-size: 30px;
+    margin-top: 3%;
+}
+#einloggenForm{
     text-align: center;
     margin: 20px;
 }
