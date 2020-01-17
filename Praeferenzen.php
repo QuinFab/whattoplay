@@ -57,9 +57,11 @@ if (isset($_POST['Genre'])) {
     </ul>
 </div>
 
-<h1 id="HeaderPräferenzen"> Präferenzen </h1>
-<form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
-    <div id="Forms">
+    <h1 id="HeaderPräferenzen"> Präferenzen </h1>
+    <form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
+       <div id="allePräferenzen">
+       <div id="UserPraeferenzen">
+        <div id="Forms">
         <label id="Lable" for="Genre">Genre </label> <br>
         <input name="Genre" value="Action" type="radio" checked>Action <br>
         <input name="Genre" value="Adventure" type="radio">Adventure <br>
@@ -105,9 +107,14 @@ if (isset($_POST['Genre'])) {
         <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
         <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
         <input name="Budget" value="9999" type="radio" checked>Egal <br>
-    </div>
-    <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
-    </button>
-</form>
+        </div>
+       </div>
+       </div>
+        <br>
+        <br>
+        <div id="PräferenzenAbschickendiv">
+        <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren</button>
+        </div>
+    </form>
 </body>
 </html>

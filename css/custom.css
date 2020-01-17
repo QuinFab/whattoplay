@@ -325,11 +325,10 @@ li {
     background-color: rgba(255,255,255,0.5);
     margin-left: auto;
     margin-right: auto;
-    min-width: 210px;
+    min-width: 206px;
     height: 200px;
     text-align: center;
     float: left;
-
 }
 #RegistrierenButtondiv{
     text-align: center;
