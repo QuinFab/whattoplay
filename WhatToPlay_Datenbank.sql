@@ -1,7 +1,27 @@
+Drop database if exists iba;
+
+create database iba;
 
 use iba;
 
-drop table spiele;
+create table if not exists user(
+user_id varchar(40) unique,
+email varchar(40) not null,
+password varchar(60) not null,
+erstelltam timestamp,
+primary key (user_id)
+);
+
+create table if not exists praeferenzen(
+user_id varchar(40),
+Genre varchar(30) not null,
+Plattform varchar(30) not null,
+zeit int(30) not null,
+FSK int(30) not  null,
+Player varchar(30) not null,
+Budget int(30) not null,
+primary key (user_id)
+);
 
 create table if not exists Spiele(
 spiel_id int unique auto_increment,
