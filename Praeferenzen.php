@@ -62,7 +62,7 @@ if (isset($_POST['Genre'])) {
        <div id="allePräferenzen">
        <div id="UserPraeferenzen">
         <div id="Forms">
-        <label id="Lable" for="Genre">Genre </label> <br>
+        <label id="Lable" for="Genre">Genre</label> <br>
         <input name="Genre" value="Action" type="radio" checked>Action <br>
         <input name="Genre" value="Adventure" type="radio">Adventure <br>
         <input name="Genre" value="Strategie" type="radio">Strategie <br>
@@ -71,14 +71,14 @@ if (isset($_POST['Genre'])) {
         <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
         </div>
         <div id="Forms">
-        <label id="Lable" for="Plattform">Plattform </label> <br>
+        <label id="Lable" for="Plattform">Plattform</label> <br>
         <input name="Plattform" value="PC" type="radio" checked>PC <br>
         <input name="Plattform" value="PS4" type="radio">PS4 <br>
         <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
         <input name="Plattform" value="Nintendo Switch" type="radio">Nintendo Switch <br>
-    </div>
-    <div id="Forms">
-        <label id="Lable" for="ZeitlicherAufwand">Zeitlicher Aufwand </label> <br>
+        </div>
+        <div id="Forms">
+        <label id="Lable" for="ZeitlicherAufwand">Zeitaufwand</label> <br>
         <input name="ZeitlicherAufwand" value="5" type="radio">bis zu 5 Stunden <br>
         <input name="ZeitlicherAufwand" value="10" type="radio">bis zu 10 Stunden <br>
         <input name="ZeitlicherAufwand" value="20" type="radio">bis zu 20 Stunden <br>
@@ -86,21 +86,22 @@ if (isset($_POST['Genre'])) {
         <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="9999" type="radio" checked>Egal <br>
-    </div>
-    <div id="Forms">
-        <label id="Lable" for="Altersbeschränkung">Altersbeschränkung </label> <br>
+        </div>
+        <div id="Forms">
+        <label id="Lable" for="Altersbeschränkung">FSK</label> <br>
+        <input name="Altersbeschraenkung" value="0" type="radio" checked>Bis zu FSK 0 <br>
         <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
         <input name="Altersbeschraenkung" value="12" type="radio" checked>Bis zu FSK 12 <br>
         <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
         <input name="Altersbeschraenkung" value="18" type="radio">Bis zu FSK 18 <br>
-    </div>
-    <div id="Forms">
-        <label id="Lable" for="Single/Multiplayer">Single/Multiplayer </label> <br>
+        </div>
+        <div id="Forms">
+        <label id="Lable" for="Single/Multiplayer">Solo/Ko-op</label> <br>
         <input name="SingelMulti" value="Singleplayer" type="radio" checked>Singleplayer <br>
         <input name="SingelMulti" value="Multiplayer" type="radio">Multiplayer <br>
-    </div>
-    <div id="Forms">
-        <label id="Lable" for="Budget">Budget </label> <br>
+        </div>
+        <div id="Forms">
+        <label id="Lable" for="Budget">Budget</label> <br>
         <input name="Budget" value="5" type="radio">Bis zu 5€ <br>
         <input name="Budget" value="10" type="radio">Bis zu 10€ <br>
         <input name="Budget" value="20" type="radio">Bis zu 20€ <br>
