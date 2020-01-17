@@ -83,7 +83,7 @@ if (isset($_POST['Genre'])) {
         <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
         </div>
         <div id="Forms">
-        <label id="Plattform" for="Plattform">Plattform </label> <br>
+        <label id="Lable" for="Plattform">Plattform </label> <br>
         <input name="Plattform" value="PC" type="radio" checked>PC <br>
         <input name="Plattform" value="PS4" type="radio">PS4 <br>
         <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
@@ -121,8 +121,11 @@ if (isset($_POST['Genre'])) {
         <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
         <input name="Budget" value="9999" type="radio" checked>Egal <br>
         </div>
-        <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
-        </button>
+        <br>
+        <br>
+        <div id="PräferenzenAbschickendiv">
+        <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren</button>
+        </div>
     </form>
 </body>
 </html>

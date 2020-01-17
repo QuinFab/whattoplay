@@ -275,7 +275,7 @@ li {
     font-size: 30px;
     margin-top: 3%;
 }
-#Forms {
+/*#Forms {
     border-style: solid;
     border-color: black;
     border-width: 3px;
@@ -285,7 +285,7 @@ li {
     padding: 10px;
     background-color: lightgrey;
     font-size: 20px;
-}
+}*/
 /*#UserPraeferenzen{
     border-style: solid;
     border-color: black;
@@ -320,15 +320,28 @@ li {
     border-color: black;
     border-width: 3px;
     background-color: rgba(255,255,255,0.5);
-    padding: 0 5px 5px;
-    margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    width: 300px;
+    margin-right: auto;
+    min-width: 210px;
     height: 200px;
+    text-align: center;
+    float: left;
+
 }
 #RegistrierenButtondiv{
     text-align: center;
+}
+#PräferenzenAbschickendiv{
+    text-align: center;
+}
+#allePräferenzen{
+    text-align: center;
+    align-content: center;
+}
+#UserPraeferenzen{
+    text-align: center;
+    align-content: center;
+    display: inline-block;
 }
 
 

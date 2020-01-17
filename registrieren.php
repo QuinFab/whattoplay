@@ -121,7 +121,7 @@ if (isset($_POST['email'])) {
                 <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
             </div>
             <div id="Forms">
-                <label id="Plattform" for="Plattform">Plattform </label> <br>
+                <label id="Lable" for="Plattform">Plattform </label> <br>
                 <input name="Plattform" value="PC" type="radio" checked>PC <br>
                 <input name="Plattform" value="PS4" type="radio">PS4 <br>
                 <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
@@ -160,11 +160,10 @@ if (isset($_POST['email'])) {
                 <input name="Budget" value="9999" type="radio" checked>Egal <br>
             </div>
 
-    <br>
-    <br>
-        <div id="RegistrierenButtondiv">
+
+    </div>
+    <div id="RegistrierenButtondiv">
         <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
-        </div>
     </div>
 </form>
 
