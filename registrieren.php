@@ -143,11 +143,11 @@ if (isset($_POST['email'])) {
         </div>
         <div id="Forms">
             <label id="Lable" for="Budget">Budget </label> <br>
-            <input name="Budget" value="5" type="radio">Von 0€ bis zu 5€ <br>
-            <input name="Budget" value="10" type="radio">Von 5€ bis zu 10€ <br>
-            <input name="Budget" value="20" type="radio">Von 10€ bis zu 20€ <br>
-            <input name="Budget" value="40" type="radio">Von 20€ bis zu 40€ <br>
-            <input name="Budget" value="60" type="radio">Von 40€ bis zu 60€ <br>
+            <input name="Budget" value="5" type="radio">Bis zu 5€ <br>
+            <input name="Budget" value="10" type="radio">Bis zu 10€ <br>
+            <input name="Budget" value="20" type="radio">Bis zu 20€ <br>
+            <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
+            <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
             <input name="Budget" value="9999" type="radio" checked>Egal <br>
         </div>
         <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
