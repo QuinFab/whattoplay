@@ -89,7 +89,6 @@ if (isset($_POST['Genre'])) {
         </div>
         <div id="Forms">
         <label id="Lable" for="Altersbeschränkung">FSK</label> <br>
-        <input name="Altersbeschraenkung" value="0" type="radio" checked>Bis zu FSK 0 <br>
         <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
         <input name="Altersbeschraenkung" value="12" type="radio" checked>Bis zu FSK 12 <br>
         <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
