@@ -7,26 +7,21 @@ $statement = $pdo->prepare("SELECT * FROM praeferenzen WHERE user_id = :user_id"
 $result = $statement->execute(array('user_id' => $userID));
 $user = $statement->fetch();
 
-/*$_SESSION['Genre'] = $user['Genre'];
+$_SESSION['Genre'] = $user['Genre'];
 $_SESSION['Plattform'] = $user['Plattform'];
 $_SESSION['zeit'] = $user['zeit'];
 $_SESSION['FSK'] = $user['FSK'];
 $_SESSION['Player'] = $user['Player'];
-$_SESSION['Budget'] = $user['Budget'];*/
+$_SESSION['Budget'] = $user['Budget'];
+$user['Player'] = "%". $user['Player']. "%";
+$user['Plattform'] = "%".$user['Plattform']."%";
+echo $user['Player'] . $user['Plattform'];
 
-echo $user['Genre'] . $user['Plattform'] . $user['zeit'] . $user['FSK'] . $user['Player'] . $user['Budget'];
+$statement32 = $pdo->prepare("SELECT * FROM spiele WHERE single_multiplayer LIKE :userPlayer AND budget <= :userBudget AND alterbeschraenkung <= :userFSK AND zeit_aufwand <= :userZeit AND plattform LIKE :userPlattform AND genre1 LIKE :userGenre");
+$statement32->execute(array('userPlayer' => $user['Player'], 'userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userZeit' => $user['zeit'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
 
-//genre1 LIKE 'Adventure' AND plattform LIKE 'Nintendo Switch' AND zeit_aufwand = 30 AND alterbeschraenkung = 6 AND single_multiplayer LIKE 'Singelplayer' AND budget = 60;
-$query = "SELECT * FROM (spiele) WHERE ((genre1 LIKE :userGenre) AND (plattform LIKE :userPlattform) AND (zeit_aufwand <= :userZeit) AND (alterbeschraenkung LIKE :userFSK) AND (single_multiplayer LIKE :userPlayer) AND (budget <= :userBudget))";
-echo $query;
-$statement32 = $pdo->prepare($query);
-$statement32->execute(array(':userPlattform' => $user['Plattform'], ':userZeit' => $user['zeit'], ':userGenre' => $user['Genre'], ':userFSK' => $user['FSK'], ':userPlayer' => $user['Player'], ':userBudget' => $user['Budget']));
-while($us = $statement32->fetch()) {
-    echo $us['plattform'] . " " . $us['zeit'] . " " . $us['Genre'] . " " . $us['FSK'] . " " . $us['Player'] . " " . $us['Budget'];
-}
-
+$us = $statement32->fetch();
 $zufall = $us['spiel_id'];
-
 $statement1 = $pdo->prepare("SELECT cover FROM spiele WHERE spiel_id = $zufall");
 $result = $statement1->execute();
 $cover = $statement1->fetch();
@@ -81,7 +76,7 @@ $cover = $statement1->fetch();
                 </button>
             </div>
             <div id="Spielebeschreibung">
-                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> <br> <?php echo $us['beschreibung'] ?> 
+                <p id="kurzeBeschreibung"> Kurze Beschreibung: </p> <br> <?php echo $us['beschreibung'] ?>
             </div>
         </li>
     </ul>
