@@ -1,4 +1,5 @@
 <?php
+
 require "php-config.php";
 error_reporting(E_ALL);
 $prüf = 0;
@@ -11,48 +12,39 @@ if (isset($_POST['email'])) {
         'root',
         '' //pwd root für mac
     );
-    if ($db == NULL) {
-        print_r("PDO konnte nicht erstellt werden!");
-    }
+
     $query = "INSERT INTO user (user_id, email, password, erstelltam) VALUES (:user_id, :email, :password, :erstelltam)";
-    if ($query == NULL) {
-        print_r("query ist NULL");
-    } else
-        $preparedStmt = $db->prepare($query);
-    if ($preparedStmt == NULL) {
-        print_r("preparedStmt ist NULL");
-    }
-    $preparedStmt->bindValue(':user_id', $_POST['user_id']);
-    $preparedStmt->bindValue(':email', $_POST['email']);
-    $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
-    $preparedStmt->bindValue(':erstelltam', date('Y-m-d H:i:s'));
-    $res = $preparedStmt->execute();
 
-    $query = "INSERT INTO praeferenzen (user_id, Genre, Plattform, zeit, FSK, Player, Budget) VALUES (:user_id, :Genre, :Plattform, :ZeitlicherAufwand, :Altersbeschraenkung, :SingelMulti, :Budget)";
-    if ($query == NULL) {
-        echo "query ist NULL";
-    } else
-        $preparedStmt = $db->prepare($query);
-    if ($preparedStmt == NULL) {
-        echo "preparedStmt ist NULL";
-    }
-    $preparedStmt->bindValue(':user_id', $_POST['user_id']);
-    $preparedStmt->bindValue(':Genre', $_POST['Genre']);
-    $preparedStmt->bindValue(':Plattform', $_POST['Plattform']);
-    $preparedStmt->bindValue(':ZeitlicherAufwand', $_POST['ZeitlicherAufwand']);
-    $preparedStmt->bindValue(':Altersbeschraenkung', $_POST['Altersbeschraenkung']);
-    $preparedStmt->bindValue(':SingelMulti', $_POST['SingelMulti']);
-    $preparedStmt->bindValue(':Budget', $_POST['Budget']);
-    $res = $preparedStmt->execute();
-    if ($res == NULL) {
-        print_r("res ist NULL");
-    }
+    $preparedStmt = $db->prepare($query);
 
+    if ($_POST['password'] != $_POST['password_again']) {
+        $error2 = ('<script> alert("Passwörter stimmen nicht überein!");</script>');
 
-    //header('Location: einloggen.php');
-} else {
-    if ($prüf != 0)
-        print_r("POST wird nicht erkannt!");
+    } else {
+        if ($_POST['email'] != $_POST['UserMail_again']) {
+            $error1 = ('<script> alert("Emails stimmen nicht überein!");</script>');
+        } else {
+            $preparedStmt->bindValue(':user_id', $_POST['user_id']);
+            $preparedStmt->bindValue(':email', $_POST['email']);
+            $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
+            $preparedStmt->bindValue(':erstelltam', date('Y-m-d H:i:s'));
+            $res = $preparedStmt->execute();
+            $query = "INSERT INTO praeferenzen (user_id, Genre, Plattform, zeit, FSK, Player, Budget) VALUES (:user_id, :Genre, :Plattform, :ZeitlicherAufwand, :Altersbeschraenkung, :SingelMulti, :Budget)";
+
+            $preparedStmt = $db->prepare($query);
+
+            $preparedStmt->bindValue(':user_id', $_POST['user_id']);
+            $preparedStmt->bindValue(':Genre', $_POST['Genre']);
+            $preparedStmt->bindValue(':Plattform', $_POST['Plattform']);
+            $preparedStmt->bindValue(':ZeitlicherAufwand', $_POST['ZeitlicherAufwand']);
+            $preparedStmt->bindValue(':Altersbeschraenkung', $_POST['Altersbeschraenkung']);
+            $preparedStmt->bindValue(':SingelMulti', $_POST['SingelMulti']);
+            $preparedStmt->bindValue(':Budget', $_POST['Budget']);
+            $res = $preparedStmt->execute();
+
+            header('Location: einloggen.php');
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -65,6 +57,7 @@ if (isset($_POST['email'])) {
     <script src="js/custom.js"></script>
 </head>
 <body>
+
 <div>
     <ul id="Navbar">
         <?php if (isset($_SESSION["user_id"])) : ?>
@@ -86,30 +79,30 @@ if (isset($_POST['email'])) {
 <p> Bitte erstelle dir einen Account und gib deine Spielepräferenzen an! <br>
     Keine Sorge, du kannst die Präferenzen nachträglich jederzeit ändern!</p>
 
-
 <form method="post" action="registrieren.php">
+
     <div id="formUserdaten">
-    <label for="user_id">Benutzername </label>
-    <input id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
-    <br>
-    <label for="password">Passwort </label>
-    <input id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
-    <br>
-    <label for="password_again">Passwort Bestätigen </label>
-    <input id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
-           minlength="1" maxlength="16">
-    <br>
-    <label for="email"> Email-Adresse </label>
-    <input id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
-    <br>
-    <label for="UserMail_again"> Email-Adresse bestätigen </label>
-    <input id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
-    <br>
+        <label for="user_id">Benutzername </label>
+        <input id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
+        <br>
+        <label for="password">Passwort </label>
+        <input id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
+        <br>
+        <label for="password_again">Passwort Bestätigen </label>
+        <input id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
+               minlength="1" maxlength="16">
+        <br>
+        <label for="email"> Email-Adresse </label>
+        <input id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
+        <br>
+        <label for="UserMail_again"> Email-Adresse bestätigen </label>
+        <input id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
+        <br>
     </div>
 
 
-<div id="allePräferenzen">
-    <h1 id="HeaderPräferenzen">  </h1>
+    <div id="allePräferenzen">
+        <h1 id="HeaderPräferenzen"></h1>
         <div id="Forms">
             <label id="Lable" for="Genre">Genre </label> <br>
             <input name="Genre" value="Action" type="radio" checked>Action <br>
@@ -157,8 +150,11 @@ if (isset($_POST['email'])) {
             <input name="Budget" value="60" type="radio">Von 40€ bis zu 60€ <br>
             <input name="Budget" value="9999" type="radio" checked>Egal <br>
         </div>
-    <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
-    </form>
-
+        <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
+</form>
+<?php
+echo $error2;
+echo $error1;
+?>
 </body>
 </html>

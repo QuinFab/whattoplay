@@ -12,8 +12,8 @@ function redirectEinloggen() {
 }
 
 /*
-function praeferenzen() {
-    alert();
+function registererror(str) {
+    alert(str);
 }
 */
 function dBFailisdaabernichtsooschlimm() {
