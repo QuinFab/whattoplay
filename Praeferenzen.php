@@ -64,7 +64,7 @@ if (isset($_POST['Genre'])) {
         <?php endif; ?>
     </ul>
 </div>
-<div id="allePräferenzen">
+
     <h1 id="HeaderPräferenzen"> Präferenzen </h1>
     <form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
         <div id="Forms">
@@ -118,6 +118,5 @@ if (isset($_POST['Genre'])) {
         <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
         </button>
     </form>
-</div>
 </body>
 </html>
