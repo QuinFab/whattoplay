@@ -37,7 +37,7 @@ require "php-config.php";
     ?>
     <button class="UserPageButton" onclick="redirectAccountInformation()"> Account Informationen </button>
     <button class="UserPageButton" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
-    <button class="UserPageButton" onclick="loschen()"> Account löschen </button>
+    <button class="UserPageButton" onclick="AccountLoeschen()"> Account löschen </button>
 
 </body>
 </html>

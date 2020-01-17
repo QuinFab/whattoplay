@@ -12,7 +12,7 @@ echo "1";
     $result = $statement->execute(array('user_id' => $_SESSION['user_id']));
     $user = $statement->fetch();
 
-    header('Location: http://localhost/whattoplay/delete.php'); exit;
+    header('Location: http://localhost/whattoplay/delete.php'); exit;//port 8888 für mac
 
 echo "account wurde gelöscht";
 

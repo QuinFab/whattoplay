@@ -25,9 +25,6 @@ function passwortVergessen() {
 
 }
 
-function achtung() {
-    window.location.href = "AccountLoeschen.php"
-}
 
 function redirectAccountInformation() {
     window.location.href = "AccountInformationen.php"
@@ -60,7 +57,7 @@ function gotoUser() {
     window.location.href = "UserSpielvorschlag.php";
 }
 
-function loschen() {
+function AccountLoeschen() {
     alert("Account wurde erfolgreich Gelöscht!\nWenn du trotzdem unsere Seite Nutzen möchtest dann kannst du dich gerne hier wieder registrieren.");
     window.location.href = "AccountLoeschen.php"
 }
