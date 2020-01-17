@@ -54,7 +54,7 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
-        echo "Mitglied seit: <br> " . $_SESSION["erstelltam"];
+        echo "Mitglied seit: <br> " . $_SESSION["erstelltam"] ;
         ?>
     </p>
 </div>
