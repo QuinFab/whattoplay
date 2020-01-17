@@ -66,7 +66,6 @@ $cover = $statement1->fetch();
                 <p> Altersbeschränkung: <?php echo $us['alterbeschraenkung'] ?> </p>
                 <p> Singleplayer/Multiplayer: <?php echo $us['single_multiplayer'] ?> </p>
                 <p> Offizieller Preis: <?php echo $us['budget'] . " Euro" ?> </p>
-                <p> Kurze Beschreibung: [PHP SPIELEBESCHREIBUNG] </p>
                 <button id="nochEinSpielvorschlagButton" onclick="gotoRandom()"> Generiere
                     Randomspiel
                 </button>
