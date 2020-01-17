@@ -74,7 +74,6 @@ $beschreibung = $statement10->fetch()
         </li>
         <li>
             <div id="Spieledaten">
-                <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
                 <p> Genre: <?php echo $genre1[0] ?> </p>
                 <p> Plattform(en): <?php echo $plattform[0] ?> </p>
                 <p> Spielzeit der Hauptgeschichte: <?php echo $zeit_aufwand[0] ?> Stunden </p>

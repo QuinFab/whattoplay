@@ -68,7 +68,7 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
-        echo "Plattform: " .$_SESSION['Plattform'];
+        echo "Plattform: " . $_SESSION['Plattform'];
         ?>
     </p>
     <p>
@@ -78,7 +78,7 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
-        echo "FSK: " .$_SESSION['FSK'];
+        echo "FSK: " . $_SESSION['FSK'];
         ?>
     </p>
     <p>
@@ -88,7 +88,7 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
-        echo "Budget: " .$_SESSION['Budget'];
+        echo "Budget: " . $_SESSION['Budget'];
         ?>
     </p>
 </div>

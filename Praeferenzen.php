@@ -9,9 +9,6 @@ if (isset($_POST['Genre'])) {
         'root',
         '' //root pwd root für mac
     );
-    if ($db == NULL) {
-        echo "PDO konnte nicht erstellt werden!";
-    }
 
     $statement = $db->prepare("Delete FROM praeferenzen WHERE user_id = :user_id");
     $result = $statement->execute(array('user_id' => $_SESSION['user_id']));
@@ -19,13 +16,8 @@ if (isset($_POST['Genre'])) {
 
 
     $query = "INSERT INTO praeferenzen (user_id, Genre, Plattform, zeit, FSK, Player, Budget) VALUES (:user_id, :Genre, :Plattform, :ZeitlicherAufwand, :Altersbeschraenkung, :SingelMulti, :Budget)";
-    if ($query == NULL) {
-        echo "query ist NULL";
-    } else
-        $preparedStmt = $db->prepare($query);
-    if ($preparedStmt == NULL) {
-        echo "preparedStmt ist NULL";
-    }
+    $preparedStmt = $db->prepare($query);
+
     $preparedStmt->bindValue(':user_id', $_SESSION['user_id']);
     $preparedStmt->bindValue(':Genre', $_POST['Genre']);
     $preparedStmt->bindValue(':Plattform', $_POST['Plattform']);
@@ -34,13 +26,7 @@ if (isset($_POST['Genre'])) {
     $preparedStmt->bindValue(':SingelMulti', $_POST['SingelMulti']);
     $preparedStmt->bindValue(':Budget', $_POST['Budget']);
     $res = $preparedStmt->execute();
-    if ($res == NULL) {
-        echo "res ist NULL";
-    }
-   // header('Location: index.php');
-} else {
-    if ($prüf != 0)
-        echo "POST wird nicht erkannt!";
+
 }
 
 ?>
@@ -71,9 +57,9 @@ if (isset($_POST['Genre'])) {
     </ul>
 </div>
 
-    <h1 id="HeaderPräferenzen"> Präferenzen </h1>
-    <form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
-        <div id="Forms">
+<h1 id="HeaderPräferenzen"> Präferenzen </h1>
+<form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
+    <div id="Forms">
         <label id="Lable" for="Genre">Genre </label> <br>
         <input name="Genre" value="Action" type="radio" checked>Action <br>
         <input name="Genre" value="Adventure" type="radio">Adventure <br>
@@ -81,15 +67,15 @@ if (isset($_POST['Genre'])) {
         <input name="Genre" value="Jump & Run" type="radio">Jump & Run <br>
         <input name="Genre" value="Shooter" type="radio">Shooter <br>
         <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
-        </div>
-        <div id="Forms">
+    </div>
+    <div id="Forms">
         <label id="Plattform" for="Plattform">Plattform </label> <br>
         <input name="Plattform" value="PC" type="radio" checked>PC <br>
         <input name="Plattform" value="PS4" type="radio">PS4 <br>
         <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
         <input name="Plattform" value="Nintendo Switch" type="radio">Nintendo Switch <br>
-        </div>
-        <div id="Forms">
+    </div>
+    <div id="Forms">
         <label id="Lable" for="ZeitlicherAufwand">Zeitlicher Aufwand </label> <br>
         <input name="ZeitlicherAufwand" value="5" type="radio">bis zu 5 Stunden <br>
         <input name="ZeitlicherAufwand" value="10" type="radio">bis zu 10 Stunden <br>
@@ -98,20 +84,20 @@ if (isset($_POST['Genre'])) {
         <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="9999" type="radio" checked>Egal <br>
-        </div>
-        <div id="Forms">
+    </div>
+    <div id="Forms">
         <label id="Lable" for="Altersbeschränkung">Altersbeschränkung </label> <br>
         <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
         <input name="Altersbeschraenkung" value="12" type="radio" checked>Bis zu FSK 12 <br>
         <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
         <input name="Altersbeschraenkung" value="18" type="radio">Bis zu FSK 18 <br>
-        </div>
-        <div id="Forms">
+    </div>
+    <div id="Forms">
         <label id="Lable" for="Single/Multiplayer">Single/Multiplayer </label> <br>
         <input name="SingelMulti" value="Singleplayer" type="radio" checked>Singleplayer <br>
         <input name="SingelMulti" value="Multiplayer" type="radio">Multiplayer <br>
-        </div>
-        <div id="Forms">
+    </div>
+    <div id="Forms">
         <label id="Lable" for="Budget">Budget </label> <br>
         <input name="Budget" value="5" type="radio">Bis zu 5€ <br>
         <input name="Budget" value="10" type="radio">Bis zu 10€ <br>
@@ -119,9 +105,9 @@ if (isset($_POST['Genre'])) {
         <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
         <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
         <input name="Budget" value="9999" type="radio" checked>Egal <br>
-        </div>
-        <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
-        </button>
-    </form>
+    </div>
+    <button id="PräferenzenAbschicken" type="submit">Präferenzen aktualisieren
+    </button>
+</form>
 </body>
 </html>

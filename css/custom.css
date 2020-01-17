@@ -23,11 +23,6 @@ p {
     text-align: center;
 }
 
-/*button {
-    display: block;
-    margin: 0 auto;
-}*/
-
 #redirectRegistrieren, #redirectEinloggen {
     display: block;
     margin: 0 auto;
@@ -70,7 +65,7 @@ body {
     min-height: 100%;
 }
 
-#willkommen{
+#willkommen {
     alignment: center;
 }
 
@@ -85,7 +80,7 @@ body {
     top: 0;
 }
 
-#einloggen, #registrieren, #account, #logout{
+#einloggen, #registrieren, #account, #logout {
     float: right;
 }
 
@@ -137,7 +132,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 25px;
     float: left;
     padding: 0 5px 5px;
@@ -149,7 +144,7 @@ body {
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 25px;
     float: left;
     padding: 0 5px 5px;
@@ -157,7 +152,7 @@ body {
     width: 500px;
 }
 
-#kurzeBeschreibung{
+#kurzeBeschreibung {
     text-align: center;
 }
 
@@ -179,11 +174,12 @@ li {
     text-align: center;
 }
 
-#logoutIcon{
+#logoutIcon {
     height: 24px;
     width: 24px;
 }
-#userDaten{
+
+#userDaten {
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -193,7 +189,7 @@ li {
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     width: 300px;
     display: block;
     margin-top: 5%;
@@ -213,6 +209,7 @@ li {
     margin-right: auto;
     position: relative;
 }
+
 #spielvorschlagGenerieren {
     display: block;
     block-size: 60px;
@@ -239,26 +236,26 @@ li {
     margin-top: 0.5%;
 }
 
-#nochEinSpielvorschlagButton{
+#nochEinSpielvorschlagButton {
     color: white;
     background: gray;
     font-size: 20px;
 }
 
-#nochEinSpielvorschlagButton:hover{
+#nochEinSpielvorschlagButton:hover {
     color: white;
     background: darkslategray;
     border-color: darkslategray;
     font-size: 20px;
 }
 
-#nochEinSpielvorschlagButton:active{
+#nochEinSpielvorschlagButton:active {
     color: white;
     background: gray;
     font-size: 20px;
 }
 
-.einloggenButton{
+.einloggenButton {
     color: white;
     background: gray;
     font-size: 20px;
@@ -266,32 +263,31 @@ li {
     margin: 0 auto;
 }
 
-.einloggenButton:hover, #registrierenButton:hover{
+.einloggenButton:hover, #registrierenButton:hover {
     color: white;
     background: darkslategray;
     border-color: darkslategray;
 }
 
-.einloggenButton:active, #registrierenButton:active{
+.einloggenButton:active, #registrierenButton:active {
     color: white;
     background: gray;
 
 }
-/*form {
-    text-align: center;
-    margin: 20px;
-}*/
-#formUserdaten{
+
+#formUserdaten {
     text-align: center;
     margin: 20px;
 }
-#registrierenButton{
+
+#registrierenButton {
     color: white;
     background: gray;
     font-size: 30px;
     margin-top: 3%;
 }
-#einloggenForm{
+
+#einloggenForm {
     text-align: center;
     margin: 20px;
 }
