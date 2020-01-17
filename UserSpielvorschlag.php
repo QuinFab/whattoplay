@@ -18,18 +18,23 @@ $user['Plattform'] = "%" . $user['Plattform'] . "%";
 
 $statement32 = $pdo->prepare("SELECT * FROM spiele WHERE single_multiplayer LIKE :userPlayer AND budget <= :userBudget AND alterbeschraenkung <= :userFSK AND zeit_aufwand <= :userZeit AND plattform LIKE :userPlattform AND genre LIKE :userGenre");
 $statement32->execute(array('userPlayer' => $user['Player'], 'userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userZeit' => $user['zeit'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
-$anzahl_user = $statement32->rowCount();
-echo "Es wurden $anzahl_user Spiele gefunden";
-if ($anzahl_user == 0) {
+$anzahl_spiele = $statement32->rowCount();
+if ($anzahl_spiele == 0) {
     $testet = "SELECT * FROM spiele WHERE budget <= :userBudget AND alterbeschraenkung <= :userFSK AND plattform LIKE :userPlattform AND genre LIKE :userGenre";
     $statement322 = $pdo->prepare("SELECT * FROM spiele WHERE budget <= :userBudget AND alterbeschraenkung <= :userFSK AND plattform LIKE :userPlattform AND genre LIKE :userGenre");
     $statement322->execute(array('userBudget' => $user['Budget'], 'userFSK' => $user['FSK'], 'userPlattform' => $user['Plattform'], 'userGenre' => $user['Genre']));
-    $anzahl_user = $statement322->rowCount();
-    echo "Es wurden immernoch $anzahl_user Spiele gefunden";
-    $us = $statement322->fetch();
-}
-else{
-$us = $statement32->fetch();
+    $anzahl_spiele = $statement322->rowCount();
+    $zwischenspeicher = $statement322->fetch();
+    if ($zwischenspeicher == 0) {
+
+        $keinspielgefunden = ('<script>alert(" Es konnte kein Spiel gefunden werden, welches auf deine Präferenzen zugeschnitten ist! Bitte ändere deine Präferenzen! ");</script>');
+
+    } else {
+        $sorryman = "Es konnte kein Spiel für deine Kriterien gefunden werden, leider konnten wir den Zeitaufwand und den Single/Multiplayer nicht beachten, wir hoffen das  Spiel gefällt dir trotdem!";
+        $us = $zwischenspeicher;
+    }
+} else {
+    $us = $statement32->fetch();
 }
 $zufall = $us['spiel_id'];
 $statement1 = $pdo->prepare("SELECT cover FROM spiele WHERE spiel_id = $zufall");
@@ -73,7 +78,7 @@ $cover = $statement1->fetch();
         </li>
         <li>
             <div id="Spielebeschreibung">
-                <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
+                <p> <?php echo $sorryman ?></p>
                 <p> Genre: <?php echo $us['genre'] ?> </p>
                 <p> Plattform(en): <?php echo $us['plattform'] ?> </p>
                 <p> Spielzeit der Hauptgeschichte: <?php echo $us['zeit_aufwand'] ?> Stunden </p>
@@ -95,6 +100,10 @@ $cover = $statement1->fetch();
     </ul>
 
 </div>
+<?php
+echo $keinspielgefunden;
+?>
+
 
 </body>
 
