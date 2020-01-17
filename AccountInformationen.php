@@ -63,32 +63,32 @@ $_SESSION['Budget'] = $user['Budget'];
     <br>
     <p>
         <?php
-        echo "1: " . $_SESSION["Genre"];
+        echo "Genre: " . $_SESSION["Genre"];
         ?>
     </p>
     <p>
         <?php
-        echo "2: " .$_SESSION['Plattform'];
+        echo "Plattform: " .$_SESSION['Plattform'];
         ?>
     </p>
     <p>
         <?php
-        echo "3: " . $_SESSION['zeit'];
+        echo "Zeit-Aufwand: " . $_SESSION['zeit'];
         ?>
     </p>
     <p>
         <?php
-        echo "4: " .$_SESSION['FSK'];
+        echo "FSK: " .$_SESSION['FSK'];
         ?>
     </p>
     <p>
         <?php
-        echo "5: " . $_SESSION['Player'];
+        echo "Single/Multiplayer: " . $_SESSION['Player'];
         ?>
     </p>
     <p>
         <?php
-        echo "6: " .$_SESSION['Budget'];
+        echo "Budget: " .$_SESSION['Budget'];
         ?>
     </p>
 </div>
