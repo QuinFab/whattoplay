@@ -1,22 +1,24 @@
 <?php
 require "php-config.php";
+error_reporting(E_ALL);
 $prüf = 0;
+
 if (isset($_POST['email'])) {
-$prüf++;
+    $prüf++;
 // VERARBEITUNG
-$db = new PDO(
-    'mysql:host=localhost;dbname=iba',
-    'root',
-    '' //pwd root für mac
-);
-if ($db == NULL) {
-    print_r("PDO konnte nicht erstellt werden!");
-}
+    $db = new PDO(
+        'mysql:host=localhost;dbname=iba',
+        'root',
+        '' //pwd root für mac
+    );
+    if ($db == NULL) {
+        print_r("PDO konnte nicht erstellt werden!");
+    }
     $query = "INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)";
     if ($query == NULL) {
         print_r("query ist NULL");
     } else
-    $preparedStmt = $db->prepare($query);
+        $preparedStmt = $db->prepare($query);
     if ($preparedStmt == NULL) {
         print_r("preparedStmt ist NULL");
     }
@@ -27,12 +29,10 @@ if ($db == NULL) {
     if ($res == NULL) {
         print_r("res ist NULL");
     }
-    header('Location: einloggen.php');
-}
-else
-{
-    if($prüf != 0)
-    print_r("POST wird nicht erkannt!");
+    //header('Location: einloggen.php');
+} else {
+    if ($prüf != 0)
+        print_r("POST wird nicht erkannt!");
 }
 ?>
 <!DOCTYPE html>
@@ -48,8 +48,11 @@ else
     <ul id="Navbar">
         <?php if (isset($_SESSION["user_id"])) : ?>
             <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
-            <li id="logout"><a href="logout.php" class="navbar"><img id="logoutIcon" src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a></li>
-            <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>
+            <li id="logout"><a href="logout.php" class="navbar"><img id="logoutIcon"
+                                                                     src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a>
+            </li>
+            <li id="account"><a href="userPage.php" class="navbar"><img
+                            src="https://img.icons8.com/android/24/000000/user.png"></a></li>
         <?php else : ?>
             <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
             <li id="registrieren"><a href="registrieren.php" class="navbar">Registrieren</a></li>

@@ -69,21 +69,19 @@ if (isset($_POST['Genre'])) {
     <form name="FormGenre" method="post" id="FormGenre" action="Praeferenzen.php">
         <div id="Forms">
         <label id="Lable" for="Genre">Genre </label> <br>
-        <input name="Genre" value="Action" type="radio">Action <br>
+        <input name="Genre" value="Action" type="radio" checked>Action <br>
         <input name="Genre" value="Adventure" type="radio">Adventure <br>
         <input name="Genre" value="Strategie" type="radio">Strategie <br>
         <input name="Genre" value="Jump and Run" type="radio">Jump & Run <br>
         <input name="Genre" value="Shooter" type="radio">Shooter <br>
         <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
-        <input name="Genre" value="Egal" type="radio" checked>Egal <br>
         </div>
         <div id="Forms">
         <label id="Plattform" for="Plattform">Plattform </label> <br>
-        <input name="Plattform" value="PC" type="radio">PC <br>
+        <input name="Plattform" value="PC" type="radio" checked>PC <br>
         <input name="Plattform" value="PS4" type="radio">PS4 <br>
         <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
         <input name="Plattform" value="Nintendo Switch" type="radio">Nintendo Switch <br>
-        <input name="Plattform" value="Egal" type="radio" checked>Egal <br>
         </div>
         <div id="Forms">
         <label id="Lable" for="ZeitlicherAufwand">Zeitlicher Aufwand </label> <br>
@@ -93,21 +91,20 @@ if (isset($_POST['Genre'])) {
         <input name="ZeitlicherAufwand" value="30" type="radio">bis zu 30 Stunden <br>
         <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
         <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
-        <input name="ZeitlicherAufwand" value="Egal" type="radio" checked>Egal <br>
+        <input name="ZeitlicherAufwand" value="9999" type="radio" checked>Egal <br>
         </div>
         <div id="Forms">
         <label id="Lable" for="Altersbeschränkung">Altersbeschränkung </label> <br>
-        <input name="Altersbeschraenkung" value="0" type="radio">FSK 0 <br>
-        <input name="Altersbeschraenkung" value="6" type="radio">FSK 6 <br>
-        <input name="Altersbeschraenkung" value="12" type="radio">FSK 12 <br>
-        <input name="Altersbeschraenkung" value="16" type="radio">FSK 16 <br>
-        <input name="Altersbeschraenkung" value="18" type="radio">FSK 18 <br>
-        <input name="Altersbeschraenkung" value="Egal" type="radio" checked>Egal <br>
+        <input name="Altersbeschraenkung" value="0" type="radio" checked>Bis zu FSK 0 <br>
+        <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
+        <input name="Altersbeschraenkung" value="12" type="radio">Bis zu FSK 12 <br>
+        <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
+        <input name="Altersbeschraenkung" value="18" type="radio">Bis zu FSK 18 <br>
         </div>
         <div id="Forms">
         <label id="Lable" for="Single/Multiplayer">Single/Multiplayer </label> <br>
-        <input name="SingelMulti" value="Singleplayer" type="radio">Singleplayer <br>
-        <input name="SingelMulti" value="Multiplayer" type="radio" checked>Multiplayer <br>
+        <input name="SingelMulti" value="Singleplayer" type="radio" checked>Singleplayer <br>
+        <input name="SingelMulti" value="Multiplayer" type="radio">Multiplayer <br>
         </div>
         <div id="Forms">
         <label id="Lable" for="Budget">Budget </label> <br>
