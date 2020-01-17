@@ -32,7 +32,7 @@ p {
     background: gray;
 }
 
-#Forms {
+/* #Forms {
     margin: 20px;
     border-style: solid;
     border-color: black;
@@ -42,7 +42,7 @@ p {
     background-color: lightgrey;
     font-size: 20px;
 
-}
+} */
 
 #registrierungBestätigen {
     margin-top: 20px;
@@ -287,11 +287,73 @@ li {
     margin-top: 3%;
 }
 
-#einloggenForm {
+#einloggenForm{
     text-align: center;
     margin: 20px;
+}
+#Forms {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 10px;
+    background-color: lightgrey;
+    font-size: 20px;
 }
 #passwortZurucksetzen{
     text-align: center;
     margin: 20px;
 }
+#formUserdaten{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    width: 400px;
+    text-align: center;
+}
+.UserInfoBeschreibung{
+    float: left;
+}
+.UserInfo{
+    float: right;
+}
+#Forms{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 0 5px 5px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+}
+#RegistrierenButtondiv{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

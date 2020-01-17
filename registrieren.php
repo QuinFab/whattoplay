@@ -82,27 +82,28 @@ if (isset($_POST['email'])) {
 <form method="post" action="registrieren.php">
 
     <div id="formUserdaten">
-        <label for="user_id">Benutzername </label>
-        <input id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
-        <br>
-        <label for="password">Passwort </label>
-        <input id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
-        <br>
-        <label for="password_again">Passwort Bestätigen </label>
-        <input id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
-               minlength="1" maxlength="16">
-        <br>
-        <label for="email"> Email-Adresse </label>
-        <input id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
-        <br>
-        <label for="UserMail_again"> Email-Adresse bestätigen </label>
-        <input id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
-        <br>
+    <label class="UserInfoBeschreibung" for="user_id">Benutzername </label>
+    <input class="UserInfo" id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
+    <br><br>
+    <label class="UserInfoBeschreibung" for="password">Passwort </label>
+    <input class="UserInfo" id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
+    <br><br>
+    <label class="UserInfoBeschreibung" for="password_again">Passwort Bestätigen </label>
+    <input class="UserInfo" id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
+           minlength="1" maxlength="16">
+    <br><br>
+    <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
+    <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
+    <br><br>
+    <label class="UserInfoBeschreibung" for="UserMail_again"> Email-Adresse bestätigen </label>
+    <input class="UserInfo" id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
+    <br>
     </div>
 
 
-    <div id="allePräferenzen">
-        <h1 id="HeaderPräferenzen"></h1>
+<div id="allePräferenzen">
+    <h1 id="HeaderPräferenzen">  </h1>
+    <div id="UserPraeferenzen">
         <div id="Forms">
             <label id="Lable" for="Genre">Genre </label> <br>
             <input name="Genre" value="Action" type="radio" checked>Action <br>
