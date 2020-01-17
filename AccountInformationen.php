@@ -73,6 +73,9 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
+        if($_SESSION['zeit'] == 9999) {
+            echo "Zeit-Aufwand: Egal";
+        }else
         echo "Zeit-Aufwand: " . $_SESSION['zeit'];
         ?>
     </p>
@@ -88,8 +91,12 @@ $_SESSION['Budget'] = $user['Budget'];
     </p>
     <p>
         <?php
+        if($_SESSION['Budget'] == 9999){
+            echo "Budget: Egal";
+        }else
         echo "Budget: " . $_SESSION['Budget'];
         ?>
+
     </p>
 </div>
 </body>

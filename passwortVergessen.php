@@ -1,3 +1,37 @@
+<?php
+/*require "php-config.php";
+$prüf = 0;
+if (isset($_POST['Genre'])) {
+    $prüf++;
+// VERARBEITUNG
+    $db = new PDO(
+        'mysql:host=localhost;dbname=iba',
+        'root',
+        'root' //root pwd root für mac
+    );
+    $email1 = $_POST['email'];
+    $statement = $pdo->prepare("SELECT * FROM user WHERE email = :email");
+    $result = $statement->execute(array('email' => $email));
+    $user = $statement->fetch();
+    echo $user['password'];*/
+
+
+/*    $statement = $db->prepare("Delete password FROM user WHERE user_id = :user_id");
+    $result = $statement->execute(array('user_id' => $_SESSION['user_id']));
+    $user = $statement->fetch();
+
+
+    $query = "INSERT INTO user (password) VALUES (:neuespasswort)";
+    $preparedStmt = $db->prepare($query);
+
+    $preparedStmt->bindValue(':user_id', $_SESSION['user_id']);
+    $preparedStmt->bindValue(':neuespasswort', password_hash($_POST['neuespasswort'], PASSWORD_BCRYPT, ['cost' => 12]));
+    $res = $preparedStmt->execute();*/
+
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,13 +56,19 @@
     </ul>
 </div>
 <h1>Passwort Zurücksetzen</h1>
-<form method="post">
-    <label for="e-mail">E-mail</label>
-    <input id="e-mail" type="text" placeholder="max@mustermann.de">
+<form id="passwortZurucksetzen" method="post">
+    <label for="email"> Deine Email</label>
     <br>
-    <button type="submit" onclick="Platzhalter()">Passwort Zurücksetzen</button>
+    <input id="email" placeholder="Deine Mail">
+    <br>
+    <label for="passwortZuruecksetzen">Neues Passwort</label>
+    <br>
+    <input id="neuespasswort" type="text" placeholder="Neues Passwort">
+    <br>
+    <input id="neuespasswortbestätigen" type="text" placeholder="Neues Passwort bestätigen">
+    <br>
+    <button type="submit">Passwort Zurücksetzen </button>
 </form>
-<p>Wenn sie den Knopf betätigen wird ihnen eine E-mail geschickt</p>
 
 </body>
 </html>
