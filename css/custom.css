@@ -37,21 +37,6 @@ p {
     background: gray;
 }
 
-#spielvorschlagGenerieren {
-    display: block;
-    block-size: 60px;
-    font-size: 40px;
-    color: white;
-    background: gray;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: relative;
-}
-
-
 #Forms {
     margin: 20px;
     border-style: solid;
@@ -223,10 +208,17 @@ li {
     font-size: 40px;
     color: white;
     background: gray;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    margin-top: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#spielvorschlagGenerieren {
+    display: block;
+    block-size: 60px;
+    font-size: 40px;
+    color: white;
+    background: gray;
     margin-top: 0.5%;
     margin-left: auto;
     margin-right: auto;
@@ -234,37 +226,17 @@ li {
 }
 
 .UserPageButton:hover, #spielvorschlagGenerieren:hover {
-    display: block;
-    block-size: 60px;
-    font-size: 40px;
     color: white;
     background: darkslategray;
     border-color: darkslategray;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 0.5%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
 }
 
 .UserPageButton:active, #spielvorschlagGenerieren:active {
     display: block;
-    block-size: 60px;
-    font-size: 40px;
     color: white;
     background: gray;
     border-color: gray;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     margin-top: 0.5%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
 }
 
 #nochEinSpielvorschlagButton{

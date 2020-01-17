@@ -70,7 +70,7 @@ $cover = $statement1->fetch();
                     Randomspiel
                 </button>
                 <button id="nochEinSpielvorschlagButton" onclick="gotoUser()"> Generiere
-                    Spiel nach meinen kriterien
+                    Userspiel
                 </button>
             </div>
             <div id="Spielebeschreibung">
