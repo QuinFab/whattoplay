@@ -11,7 +11,6 @@ if (isset($_GET['login'])) {
     $result = $statement->execute(array('email' => $email1));
     $user = $statement->fetch();
 
-//Überprüfung des Passworts
     if ($user !== false && password_verify($password1, $user['password'])) {
         $_SESSION['user_id'] = $user['user_id'];
         $_SESSION['timestamp'] = new DateTime();
@@ -41,8 +40,10 @@ if (isset($_GET['login'])) {
     <ul id="Navbar">
         <?php if (isset($_SESSION["user_id"])) : ?>
             <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
-            <li id="logout"><a href="logout.php" class="navbar"><img src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a></li>
-            <li id="account"><a href="userPage.php" class="navbar"><img src="https://img.icons8.com/android/24/000000/user.png"></a></li>
+            <li id="logout"><a href="logout.php" class="navbar"><img
+                            src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a></li>
+            <li id="account"><a href="userPage.php" class="navbar"><img
+                            src="https://img.icons8.com/android/24/000000/user.png"></a></li>
         <?php else : ?>
             <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
             <li id="registrieren"><a href="registrieren.php" class="navbar">Registrieren</a></li>
@@ -58,15 +59,15 @@ if (isset($errorMessage)) {
 ?>
 
 <div id="einloggenForm">
-<form action="?login=1" method="post">
-    E-Mail:<br>
-    <input type="email" size="40" maxlength="250" name="email"><br><br>
+    <form action="?login=1" method="post">
+        E-Mail:<br>
+        <input type="email" size="40" maxlength="250" name="email"><br><br>
 
-    Dein Passwort:<br>
-    <input type="password" size="40" maxlength="250" name="password"><br>
+        Dein Passwort:<br>
+        <input type="password" size="40" maxlength="250" name="password"><br>
 
-    <input class="einloggenButton" type="submit" value="Abschicken">
-</form>
+        <input class="einloggenButton" type="submit" value="Abschicken">
+    </form>
 </div>
 <button class="einloggenButton" onclick="passwortVergessen()">Passwort Zurücksetzen</button>
 </body>
