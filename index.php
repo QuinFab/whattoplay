@@ -33,7 +33,8 @@ require "php-config.php";
     Ob schon erfahrener Zocker oder Neueinsteiger, diese Website ist für jeden.<br>
     Erstelle dir jetzt einen Account, um direkt loszulegen!</p>
 <?php if (isset($_SESSION["user_id"])) : ?>
-    <button id="spielvorschlagGenerieren" onclick="gotoRandom()"> Generiere Randomspielvorschlag</button>
+
+
 <?php else : ?>
     <button id="spielvorschlagGenerieren" onclick="redirectEinloggen()"> Einloggen</button>
 <?php endif; ?>

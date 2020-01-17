@@ -38,6 +38,8 @@ require "php-config.php";
     <button class="UserPageButton" onclick="redirectAccountInformation()"> Account Informationen </button>
     <button class="UserPageButton" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
     <button class="UserPageButton" onclick="AccountLoeschen()"> Account löschen </button>
+    <button id="spielvorschlagGenerieren" onclick="gotoUser()"> Generiere ein Userspiel!</button>
+    <button id="spielvorschlagGenerieren" onclick="gotoRandom()"> Generiere ein Zufallsspiel!</button>
 
 </body>
 </html>
