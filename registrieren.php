@@ -14,7 +14,7 @@ if (isset($_POST['email'])) {
     if ($db == NULL) {
         print_r("PDO konnte nicht erstellt werden!");
     }
-    $query = "INSERT INTO user (user_id, email, password) VALUES (:user_id, :email, :password)";
+    $query = "INSERT INTO user (user_id, email, password, erstelltam) VALUES (:user_id, :email, :password, :erstelltam)";
     if ($query == NULL) {
         print_r("query ist NULL");
     } else
@@ -25,6 +25,7 @@ if (isset($_POST['email'])) {
     $preparedStmt->bindValue(':user_id', $_POST['user_id']);
     $preparedStmt->bindValue(':email', $_POST['email']);
     $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
+    $preparedStmt->bindValue(':erstelltam', date('Y-m-d H:i:s'));
     $res = $preparedStmt->execute();
     if ($res == NULL) {
         print_r("res ist NULL");
@@ -73,7 +74,7 @@ if (isset($_POST['email'])) {
     <br>
     <label for="password_again">Passwort Bestätigen </label>
     <input id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
-           minlength="8" maxlength="16">
+           minlength="1" maxlength="16">
     <br>
     <label for="email"> Email-Adresse </label>
     <input id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">

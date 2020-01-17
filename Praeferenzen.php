@@ -12,6 +12,12 @@ if (isset($_POST['Genre'])) {
     if ($db == NULL) {
         echo "PDO konnte nicht erstellt werden!";
     }
+
+    $statement = $db->prepare("Delete FROM praeferenzen WHERE user_id = :user_id");
+    $result = $statement->execute(array('user_id' => $_SESSION['user_id']));
+    $user = $statement->fetch();
+
+
     $query = "INSERT INTO praeferenzen (user_id, Genre, Plattform, zeit, FSK, Player, Budget) VALUES (:user_id, :Genre, :Plattform, :ZeitlicherAufwand, :Altersbeschraenkung, :SingelMulti, :Budget)";
     if ($query == NULL) {
         echo "query ist NULL";
