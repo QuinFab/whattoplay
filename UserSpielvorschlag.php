@@ -60,7 +60,7 @@ $cover = $statement1->fetch();
         <li>
             <div id="Spielebeschreibung">
                 <!-- Alles mit Eckigen Klammern sind Platzhalter, die noch Funktion brauchen -->
-                <p> Genre: <?php echo $us['genre1'] . " " . $us['genre2']; ?> </p>
+                <p> Genre: <?php echo $us['genre'] ?> </p>
                 <p> Plattform(en): <?php echo $us['plattform'] ?> </p>
                 <p> Spielzeit der Hauptgeschichte: <?php echo $us['zeit_aufwand'] ?> Stunden </p>
                 <p> Altersbeschränkung: <?php echo $us['alterbeschraenkung'] ?> </p>
