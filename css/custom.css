@@ -32,7 +32,7 @@ p {
     background: gray;
 }
 
-#Forms {
+/* #Forms {
     margin: 20px;
     border-style: solid;
     border-color: black;
@@ -42,7 +42,7 @@ p {
     background-color: lightgrey;
     font-size: 20px;
 
-}
+} */
 
 #registrierungBestätigen {
     margin-top: 20px;
@@ -178,8 +178,7 @@ li {
     height: 24px;
     width: 24px;
 }
-
-#userDaten {
+#userDaten{
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -263,7 +262,7 @@ li {
     margin: 0 auto;
 }
 
-.einloggenButton:hover, #registrierenButton:hover {
+.einloggenButton:hover, #registrierenButton:hover{
     color: white;
     background: darkslategray;
     border-color: darkslategray;
@@ -274,24 +273,81 @@ li {
     background: gray;
 
 }
-
-#formUserdaten {
+/*form {
     text-align: center;
     margin: 20px;
-}
+}*/
 
-#registrierenButton {
+#registrierenButton{
     color: white;
     background: gray;
     font-size: 30px;
     margin-top: 3%;
 }
+#einloggenForm{
+    text-align: center;
+    margin: 20px;
+}
+#formUserdaten{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    width: 400px;
+    text-align: center;
+}
+.UserInfoBeschreibung{
+    float: left;
+}
+.UserInfo{
+    float: right;
+}
+#Forms{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 180px;
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+#RegistrierenButtondiv{
+    text-align: center;
+}
+#PräferenzenAbschickendiv{
+    text-align: center;
+}
+#allePräferenzen{
+    text-align: center;
+    align-content: center;
+}
+#UserPraeferenzen{
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+}
 
-#einloggenForm {
-    text-align: center;
-    margin: 20px;
-}
-#passwortZurucksetzen{
-    text-align: center;
-    margin: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
