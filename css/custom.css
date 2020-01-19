@@ -301,15 +301,13 @@ li {
 .UserInfo{
     float: right;
 }
-#left{
-    border-left: 3px solid black;
-}
+
 .Forms{
     /*border-style: solid;
     border-color: black;
     border-width: 3px;
     background-color: rgba(255,255,255,0.5);*/
-    border-top: 3px solid black;
+    border-top: 2px solid black;
     margin-left: auto;
     margin-right: auto;
     min-width: 180px;
@@ -336,10 +334,20 @@ li {
     border-style: solid;
     border-color: black;
     border-width: 3px;
-    background-color: #5a6268;
-    /*background-color: rgba(255,255,255,0.5);*/
+    background-color: rgba(255,255,255,0.5);
 }
 #registrierung1{
+    text-align: center;
+    display: block ruby;
+    padding-top: 40px;
+}
+#PräferenzenKasten{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+}
+#PräferenzenKasten1{
     text-align: center;
     display: block ruby;
     padding-top: 40px;
