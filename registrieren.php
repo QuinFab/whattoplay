@@ -10,7 +10,7 @@ if (isset($_POST['email'])) {
     $db = new PDO(
         'mysql:host=localhost;dbname=iba',
         'root',
-        '' //pwd root für mac
+        'root' //pwd root für mac
     );
 
     $query = "INSERT INTO user (user_id, email, password, erstelltam) VALUES (:user_id, :email, :password, :erstelltam)";

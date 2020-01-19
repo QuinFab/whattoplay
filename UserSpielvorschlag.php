@@ -1,6 +1,6 @@
 <?php
 require "php-config.php";
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', 'root'); //pwd: root für mac
 $userID = $_SESSION['user_id'];
 
 $statement = $pdo->prepare("SELECT * FROM praeferenzen WHERE user_id = :user_id");

@@ -1,6 +1,6 @@
 <?php
 require "php-config.php";
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //pwd: root für mac
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', 'root'); //pwd: root für mac
 
 $zufall = rand(1, 29);
 $statement1 = $pdo->prepare("SELECT cover FROM spiele WHERE spiel_id = $zufall");

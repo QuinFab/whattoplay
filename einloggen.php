@@ -1,7 +1,7 @@
 <?php
 require "php-config.php";
 
-$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //Mac = 'root'
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', 'root'); //Mac = 'root'
 
 if (isset($_GET['login'])) {
     $email1 = $_POST['email'];
@@ -18,7 +18,7 @@ if (isset($_GET['login'])) {
         $_SESSION['password'] = $user['password'];
         $_SESSION['erstelltam'] = $user['erstelltam'];
 
-        header("Location: http://localhost/whattoplay/userPage.php");
+        header("Location: http://localhost:8888/whattoplay/userPage.php");
         $userid = $_SESSION['user_id'];
 
     } else {
