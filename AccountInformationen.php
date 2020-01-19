@@ -1,5 +1,20 @@
 <?php
-require "php-config.php"
+require "php-config.php";
+
+$pdo = new PDO('mysql:host=localhost;dbname=iba', 'root', ''); //Mac = 'root'
+
+$userID = $_SESSION['user_id'];
+$statement = $pdo->prepare("SELECT * FROM praeferenzen WHERE user_id = :user_id");
+$result = $statement->execute(array('user_id' => $userID));
+$user = $statement->fetch();
+
+$_SESSION['Genre'] = $user['Genre'];
+$_SESSION['Plattform'] = $user['Plattform'];
+$_SESSION['zeit'] = $user['zeit'];
+$_SESSION['FSK'] = $user['FSK'];
+$_SESSION['Player'] = $user['Player'];
+$_SESSION['Budget'] = $user['Budget'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,15 +42,62 @@ require "php-config.php"
         <?php endif; ?>
     </ul>
 </div>
+<div class="accountInfo">
+    <p>  <?php
+        echo "Benutzername: <br> " . $_SESSION["user_id"];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "E-Mail-Adresse: <br> " . $_SESSION["email"];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "Mitglied seit: <br> " . $_SESSION["erstelltam"];
+        ?>
+    </p>
+</div>
+<div class="accountInfo">
+    <p>Präferenzen:</p>
+    <br>
+    <p>
+        <?php
+        echo "Genre: " . $_SESSION["Genre"];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "Plattform: " . $_SESSION['Plattform'];
+        ?>
+    </p>
+    <p>
+        <?php
+        if($_SESSION['zeit'] == 9999) {
+            echo "Zeit-Aufwand: Egal";
+        }else
+        echo "Zeit-Aufwand: " . $_SESSION['zeit'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "FSK: " . $_SESSION['FSK'];
+        ?>
+    </p>
+    <p>
+        <?php
+        echo "Single/Multiplayer: " . $_SESSION['Player'];
+        ?>
+    </p>
+    <p>
+        <?php
+        if($_SESSION['Budget'] == 9999){
+            echo "Budget: Egal";
+        }else
+        echo "Budget: " . $_SESSION['Budget'];
+        ?>
 
-<p>  <?php
-    echo "Benutzername: " . $_SESSION["user_id"];
-    ?>
-</p>
-<p>
-    <?php
-    echo "E-Mail-Adresse: " . $_SESSION["email"];
-    ?>
-</p>
+    </p>
+</div>
 </body>
 </html>

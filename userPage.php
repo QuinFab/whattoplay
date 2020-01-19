@@ -16,7 +16,8 @@ require "php-config.php";
         <?php if (isset($_SESSION["user_id"])) : ?>
             <li><a href="index.php" class="navbar">WhatToPlay?</a></li>
             <li id="logout"><a href="logout.php" class="navbar"><img id="logoutIcon"
-                            src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a></li>
+                                                                     src="https://img.icons8.com/pastel-glyph/64/000000/logout-rounded-down.png"></a>
+            </li>
             <li id="account"><a href="userPage.php" class="navbar"><img
                             src="https://img.icons8.com/android/24/000000/user.png"></a></li>
         <?php else : ?>
@@ -32,12 +33,15 @@ require "php-config.php";
         echo "Herzlich Willkommen: " . $_SESSION['user_id'] . "!";
     } else {
         Print "Bitte erst einloggen";
-        header('Location: http://localhost/whattoplay/einloggen.php'); exit; //Port 8888 für Mac
+        header('Location: http://localhost:8888/whattoplay/einloggen.php');
+        exit; //Port 8888 für Mac
     }
     ?>
-    <button id="AccountInfo" onclick="redirectAccountInformation()"> Account Informationen </button>
-    <button id="PräferenzenÄndern" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten </button>
-    <button id="AccountDelete" onclick="achtung()"> Account löschen </button>
+    <button class="UserPageButton" onclick="redirectAccountInformation()"> Account Informationen</button>
+    <button class="UserPageButton" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten</button>
+    <button class="UserPageButton" onclick="AccountLoeschen()"> Account löschen</button>
+    <button id="spielvorschlagGenerieren" onclick="gotoUser()"> Generiere ein Userspiel!</button>
+    <button id="spielvorschlagGenerieren" onclick="gotoRandom()"> Generiere ein Zufallsspiel!</button>
 
 </body>
 </html>
