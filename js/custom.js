@@ -10,7 +10,10 @@ function passwortVergessen() {
     window.location.href = "passwortVergessen.php";
 
 }
+function emaillink() {
+    window.location.href = "emailversenden.php";
 
+}
 
 function redirectAccountInformation() {
     window.location.href = "AccountInformationen.php"

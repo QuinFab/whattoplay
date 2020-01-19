@@ -29,6 +29,8 @@ if (isset($_POST['email'])) {
             $preparedStmt->bindValue(':password', password_hash($_POST['password'], PASSWORD_BCRYPT, ['cost' => 12]));
             $preparedStmt->bindValue(':erstelltam', date('Y-m-d H:i:s'));
             $res = $preparedStmt->execute();
+
+
             $query = "INSERT INTO praeferenzen (user_id, Genre, Plattform, zeit, FSK, Player, Budget) VALUES (:user_id, :Genre, :Plattform, :ZeitlicherAufwand, :Altersbeschraenkung, :SingelMulti, :Budget)";
 
             $preparedStmt = $db->prepare($query);
@@ -82,29 +84,46 @@ if (isset($_POST['email'])) {
 <form method="post" action="registrieren.php">
 
     <div id="formUserdaten">
-    <label class="UserInfoBeschreibung" for="user_id">Benutzername </label>
-    <input class="UserInfo" id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
-    <br><br>
-    <label class="UserInfoBeschreibung" for="password">Passwort </label>
-    <input class="UserInfo" id="password" name="password" type="password" placeholder="Passwort" minlength="1" maxlength="16">
-    <br><br>
-    <label class="UserInfoBeschreibung" for="password_again">Passwort Bestätigen </label>
-    <input class="UserInfo" id="password_again" name="password_again" type="password" placeholder="Passwort Bestätigen"
-           minlength="1" maxlength="16">
-    <br><br>
-    <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
-    <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
-    <br><br>
-    <label class="UserInfoBeschreibung" for="UserMail_again"> Email-Adresse bestätigen </label>
-    <input class="UserInfo" id="UserMail_again" name="UserMail_again" type="email" placeholder="z.B. meineMail@web.de">
-    <br>
+        <label class="UserInfoBeschreibung" for="user_id">Benutzername </label>
+        <input class="UserInfo" id="user_id" name="user_id" type="text" placeholder="z.B. MaxMaster3314">
+        <br><br>
+        <label class="UserInfoBeschreibung" for="password">Passwort </label>
+        <input class="UserInfo" id="password" name="password" type="password" placeholder="Passwort" minlength="1"
+               maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}">
+        <!-- hoover
+        Gesamtlänge zwischen 6 und 12 Zeichen
+alphanumerische und ausgewählte Sonderzeichen sind erlaubt
+erstes Zeichen darf weder Ziffer, noch Unterstrich noch Sonderzeichen sein
+muss mindestens eine Ziffer enthalten
+!-->
+        <br><br>
+        <label class="UserInfoBeschreibung" for="password_again">Passwort Bestätigen </label>
+        <input class="UserInfo" id="password_again" name="password_again" type="password"
+               placeholder="Passwort Bestätigen"
+               minlength="1" maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}">
+        <!-- hoover
+      Gesamtlänge zwischen 6 und 12 Zeichen
+alphanumerische und ausgewählte Sonderzeichen sind erlaubt
+erstes Zeichen darf weder Ziffer, noch Unterstrich noch Sonderzeichen sein
+muss mindestens eine Ziffer enthalten
+!-->
+        <br><br>
+        <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
+        <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de" required
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$">
+        <br><br>
+        <label class="UserInfoBeschreibung" for="UserMail_again"> Email-Adresse bestätigen </label>
+        <input class="UserInfo" id="UserMail_again" name="UserMail_again" type="email"
+               placeholder="z.B. meineMail@web.de" required
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$">
+        <br>
     </div>
 
 
-<div id="allePräferenzen">
-    <h1 id="HeaderPräferenzen">  </h1>
-    <div id="UserPraeferenzen">
-        <div id="Forms">
+    <div id="allePräferenzen">
+        <h1 id="HeaderPräferenzen"></h1>
+        <div id="UserPraeferenzen">
+            <div id="Forms">
                 <label id="Lable" for="Genre">Genre</label> <br>
                 <input name="Genre" value="Action" type="radio" checked>Action <br>
                 <input name="Genre" value="Adventure" type="radio">Adventure <br>
@@ -153,16 +172,16 @@ if (isset($_POST['email'])) {
             </div>
 
 
-    </div>
-    <div id="RegistrierenButtondiv">
-        <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
-    </div>
+        </div>
+        <div id="RegistrierenButtondiv">
+            <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
+        </div>
 </form>
 <?php
 if (isset($error1))
-echo $error2;
+    echo $error2;
 if (isset($error2))
-echo $error1;
+    echo $error1;
 ?>
 </body>
 </html>
