@@ -101,6 +101,7 @@ $cover = $statement1->fetch();
 
 </div>
 <?php
+if (isset($keinspielgefunden))
 echo $keinspielgefunden;
 ?>
 
