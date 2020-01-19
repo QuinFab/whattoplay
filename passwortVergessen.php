@@ -100,7 +100,7 @@ muss mindestens eine Ziffer enthalten
         <br>
     </div>
     <div id="RegistrierenButtondiv">
-        <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
+        <button id="passwortzuruecksetzenButton" type="submit"> Passwort zurücksetzen</button>
     </div>
 </form>
 </body>

@@ -70,7 +70,7 @@ if (isset($errorMessage)) {
     </form>
 </div>
 <a href="emailversenden.php">
-    <button onclick="emaillink()">Passwort Zurücksetzen</button>
+    <button id="passwortzuruecksetzenButton" onclick="emaillink()">Passwort Zurücksetzen</button>
 </a>
 </body>
 </html>

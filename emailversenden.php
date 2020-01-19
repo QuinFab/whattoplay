@@ -32,7 +32,7 @@
 </div>
 
 <h1>Passwort vergessen? </h1>
-<p> Kein Problem, jetzt deine email hier eingeben und der reset link wird dir in kürze zugeschickt. <br></p>
+<p> Kein Problem, jetzt deine Email hier eingeben und der Reset Link wird dir in kürze zugeschickt. <br></p>
 
 <!--<form method="post" action="passwortVergessen.php"> !-->
 
