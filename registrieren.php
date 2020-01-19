@@ -162,7 +162,7 @@ if (isset($_POST['email'])) {
                 <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
                 <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
                 <input name="Budget" value="9999" type="radio" checked>Egal <br>
-                </div>>
+                </div>
             </div>
 </div>
 </div>
