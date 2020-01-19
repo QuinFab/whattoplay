@@ -159,7 +159,9 @@ if (isset($_POST['email'])) {
     </div>
 </form>
 <?php
+if (isset($error1))
 echo $error2;
+if (isset($error2))
 echo $error1;
 ?>
 </body>
