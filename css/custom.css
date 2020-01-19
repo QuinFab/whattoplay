@@ -303,14 +303,11 @@ li {
 }
 
 .Forms{
-    /*border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    background-color: rgba(255,255,255,0.5);*/
     border-top: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    min-width: 180px;
+    padding:10px;
+    width: auto;
     height: 200px;
     text-align: center;
     float: left;
@@ -351,6 +348,9 @@ li {
     text-align: center;
     display: block ruby;
     padding-top: 40px;
+}
+#RadioButton{
+    text-align: left;
 }
 
 
