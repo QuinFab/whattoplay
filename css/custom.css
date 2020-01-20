@@ -312,6 +312,16 @@ li {
     text-align: center;
     float: left;
 }
+#Forms{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    padding-right:10px;
+    width: auto;
+    height: 170px;
+    text-align: center;
+    float: left;
+}
 #RegistrierenButtondiv{
     text-align: center;
 }
@@ -327,12 +337,12 @@ li {
     align-content: center;
     display: inline-block;
 }
-#registrierung{
+/*#registrierung{
     border-style: solid;
     border-color: black;
     border-width: 3px;
     background-color: rgba(255,255,255,0.5);
-}
+}*/
 #registrierung1{
     text-align: center;
     display: block ruby;
