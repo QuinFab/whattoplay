@@ -38,7 +38,8 @@
 
     <div id="formUserdaten">
         <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
-        <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de">
+        <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de" required
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="- Ihre Email muss ein @ beinhalten">
         <br><br>
     </div>
     <div id="RegistrierenButtondiv">
