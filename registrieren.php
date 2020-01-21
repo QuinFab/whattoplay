@@ -123,7 +123,6 @@ muss mindestens eine Ziffer enthalten
         <br>
     </div>
 
-
     <div id="allePräferenzen">
         <h1 id="HeaderPräferenzen"></h1>
         <div id="UserPraeferenzen">

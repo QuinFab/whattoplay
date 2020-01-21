@@ -78,7 +78,10 @@ $cover = $statement1->fetch();
         </li>
         <li>
             <div id="Spielebeschreibung">
-                <p> <?php echo $sorryman ?></p>
+                <p> <?php
+                    if(isset($sorryman))
+                        echo $sorryman
+                    ?></p>
                 <p> Genre: <?php echo $us['genre'] ?> </p>
                 <p> Plattform(en): <?php echo $us['plattform'] ?> </p>
                 <p> Spielzeit der Hauptgeschichte: <?php echo $us['zeit_aufwand'] ?> Stunden </p>
