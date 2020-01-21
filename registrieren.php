@@ -89,7 +89,7 @@ if (isset($_POST['email'])) {
         <br><br>
         <label class="UserInfoBeschreibung" for="password">Passwort </label>
         <input class="UserInfo" id="password" name="password" type="password" placeholder="Passwort" minlength="1"
-               maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}">
+               maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}" title="Ihr Passwort muss zwischen 6 und 12 Zeichen lang sein und muss mindestens eine Ziffer enthalten, darf aber nicht mit einer anfangen">
         <!-- hoover
         Gesamtlänge zwischen 6 und 12 Zeichen
 alphanumerische und ausgewählte Sonderzeichen sind erlaubt
@@ -100,7 +100,7 @@ muss mindestens eine Ziffer enthalten
         <label class="UserInfoBeschreibung" for="password_again">Passwort Bestätigen </label>
         <input class="UserInfo" id="password_again" name="password_again" type="password"
                placeholder="Passwort Bestätigen"
-               minlength="1" maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}">
+               minlength="1" maxlength="16" required pattern="^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}" title="Ihr Passwort muss zwischen 6 und 12 Zeichen lang sein und muss mindestens eine Ziffer enthalten, darf aber nicht mit einer anfangen">
         <!-- hoover
       Gesamtlänge zwischen 6 und 12 Zeichen
 alphanumerische und ausgewählte Sonderzeichen sind erlaubt
@@ -110,12 +110,12 @@ muss mindestens eine Ziffer enthalten
         <br><br>
         <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
         <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de" required
-               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$">
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="Ihre Email muss ein @ beinhalten">
         <br><br>
         <label class="UserInfoBeschreibung" for="UserMail_again"> Email-Adresse bestätigen </label>
         <input class="UserInfo" id="UserMail_again" name="UserMail_again" type="email"
                placeholder="z.B. meineMail@web.de" required
-               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$">
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="Ihre Email muss ein @ beinhalten">
         <br>
     </div>
 
