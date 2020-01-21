@@ -32,18 +32,6 @@ p {
     background: gray;
 }
 
-/* #Forms {
-    margin: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    float: left;
-    padding: 10px;
-    background-color: lightgrey;
-    font-size: 20px;
-
-} */
-
 #registrierungBestätigen {
     margin-top: 20px;
 }
@@ -262,13 +250,13 @@ li {
     margin: 0 auto;
 }
 
-.einloggenButton:hover, #registrierenButton:hover{
+.einloggenButton:hover, #registrierenButton:hover, #passwortzuruecksetzenButton:hover{
     color: white;
     background: darkslategray;
     border-color: darkslategray;
 }
 
-.einloggenButton:active, #registrierenButton:active {
+.einloggenButton:active, #registrierenButton:active, #passwortzuruecksetzenButton:hover {
     color: white;
     background: gray;
 
@@ -310,11 +298,18 @@ li {
     margin-right: auto;
     min-width: 180px;
     height: 200px;
-    text-align: center;
+    text-align: left;
     float: left;
+
 }
 #RegistrierenButtondiv{
     text-align: center;
+    align-content: center;
+}
+#RegistrierenButtondiv1{
+    text-align: center;
+    display: block ruby;
+    align-content: center;
 }
 #PräferenzenAbschickendiv{
     text-align: center;
@@ -329,6 +324,16 @@ li {
     display: inline-block;
 }
 
+#passwortzuruecksetzenButton{
+    margin: auto;
+    display: flex;
+    color: white;
+    background: gray;
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
 
 
 

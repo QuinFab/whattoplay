@@ -1,16 +1,19 @@
 <?php
-require "php-config.php";
+
+//Hier Müsste die Email senden Methode stehen
+
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <title>Account</title>
-
+    <title>Registrieren</title>
     <link rel="stylesheet" type="text/css" href="css/custom.css"/>
     <script src="js/custom.js"></script>
 </head>
 <body>
+
 <div>
     <ul id="Navbar">
         <?php if (isset($_SESSION["user_id"])) : ?>
@@ -27,21 +30,21 @@ require "php-config.php";
         <?php endif; ?>
     </ul>
 </div>
-<h1>
-    <?php
-    if (isset($_SESSION['user_id'])) {
-        echo "Herzlich Willkommen: " . $_SESSION['user_id'] . "!";
-    } else {
-        Print "Bitte erst einloggen";
-        header('Location: http://localhost/whattoplay/einloggen.php');
-        exit; //Port 8888 für Mac
-    }
-    ?>
-    <button class="UserPageButton" onclick="redirectAccountInformation()"> Account Informationen</button>
-    <button class="UserPageButton" onclick="redirectPraeferenzen()"> Präferenzen bearbeiten</button>
-    <button class="UserPageButton" onclick="AccountLoeschen()"> Account löschen</button>
-    <button id="spielvorschlagGenerieren" onclick="gotoUser()"> Generiere ein Userspiel!</button>
-    <button id="spielvorschlagGenerieren" onclick="gotoRandom()"> Generiere ein Zufallsspiel!</button>
 
+<h1>Passwort vergessen? </h1>
+<p> Kein Problem, jetzt deine Email hier eingeben und der Reset Link wird dir in kürze zugeschickt. <br></p>
+
+<!--<form method="post" action="passwortVergessen.php"> !-->
+
+    <div id="formUserdaten">
+        <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
+        <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de" required
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="- Ihre Email muss ein @ beinhalten">
+        <br><br>
+    </div>
+    <div id="RegistrierenButtondiv">
+        <button id="registrierenButton" onclick="passwortVergessen()"> Link an Email verschicken.</button>
+    </div>
+<!--</form>!-->
 </body>
 </html>
