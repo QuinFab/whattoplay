@@ -61,14 +61,16 @@ if (isset($errorMessage)) {
 <div id="einloggenForm">
     <form action="?login=1" method="post">
         E-Mail:<br>
-        <input type="email" size="40" maxlength="250" name="email"><br><br>
+        <input type="email" size="40" maxlength="250" name="email" required><br><br>
 
         Dein Passwort:<br>
-        <input type="password" size="40" maxlength="250" name="password"><br>
+        <input type="password" size="40" maxlength="250" name="password" required><br>
 
         <input class="einloggenButton" type="submit" value="Abschicken">
     </form>
 </div>
-<button class="einloggenButton" onclick="passwortVergessen()">Passwort Zurücksetzen</button>
+<a href="emailversenden.php">
+    <button id="passwortzuruecksetzenButton" onclick="emaillink()">Passwort Zurücksetzen</button>
+</a>
 </body>
 </html>

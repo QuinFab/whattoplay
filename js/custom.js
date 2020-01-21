@@ -10,7 +10,10 @@ function passwortVergessen() {
     window.location.href = "passwortVergessen.php";
 
 }
+function emaillink() {
+    window.location.href = "emailversenden.php";
 
+}
 
 function redirectAccountInformation() {
     window.location.href = "AccountInformationen.php"
@@ -31,7 +34,7 @@ function gotoUser() {
 
 function AccountLoeschen() {
 
-    if (confirm("Willst du deinen Account wirklich löschen? Das kann nicht mehr rückganig gemacht werden!")) {
+    if (confirm("Willst du deinen Account wirklich löschen? Das kann nicht mehr rückgängigdis gemacht werden!")) {
         alert("Account wurde erfolgreich Gelöscht!\nWenn du trotzdem unsere Seite Nutzen möchtest dann kannst du dich gerne hier wieder registrieren.");
         window.location.href = "AccountLoeschen.php"
     } else {
