@@ -315,6 +315,12 @@ li {
 }
 #RegistrierenButtondiv{
     text-align: center;
+    align-content: center;
+}
+#RegistrierenButtondiv1{
+    text-align: center;
+    display: block ruby;
+    align-content: center;
 }
 #PräferenzenAbschickendiv{
     text-align: center;
