@@ -18,7 +18,7 @@ if (isset($_GET['login'])) {
         $_SESSION['password'] = $user['password'];
         $_SESSION['erstelltam'] = $user['erstelltam'];
 
-        header("Location: userPage.php");
+        header("Location: http://localhost:8888/whattoplay/userPage.php");
         $userid = $_SESSION['user_id'];
 
     } else {
