@@ -72,7 +72,7 @@ if (isset($_POST['email'])) {
     <div id="formUserdaten">
         <label class="UserInfoBeschreibung" for="password">Passwort </label>
         <input class="UserInfo" id="password" name="password" type="password" placeholder="Passwort" minlength="1"
-               maxlength="16" ^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16}>
+               maxlength="16" ^(?=[^\d_].*?\d)\w(\w|[!@#$%]){8,16} title="- Ihre Email muss ein @ beinhalten">
         <!-- hoover
       Gesamtlänge zwischen 6 und 12 Zeichen
 alphanumerische und ausgewählte Sonderzeichen sind erlaubt
