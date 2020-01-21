@@ -76,8 +76,7 @@ if (isset($_POST['email'])) {
         <?php endif; ?>
     </ul>
 </div>
-<div id="registrierung1">
-<div id="registrierung">
+
 <h1>Registrieren</h1>
 <p> Bitte erstelle dir einen Account und gib deine Spielepräferenzen an! <br>
     Keine Sorge, du kannst die Präferenzen nachträglich jederzeit ändern!</p>
@@ -123,70 +122,6 @@ muss mindestens eine Ziffer enthalten
                pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="- Ihre Email muss ein @ beinhalten">
         <br>
     </div>
-<br>
-    <div id="PräferenzenKasten">
-            <div id="allePräferenzen">
-                <h1 id="HeaderPräferenzen">  </h1>
-                <div id="UserPraeferenzen">
-                    <div id="Forms">
-                            <label id="Lable" for="Genre">Genre</label> <br>
-                            <div id="RadioButton">
-                            <input name="Genre" value="Action" type="radio" checked>Action <br>
-                            <input name="Genre" value="Adventure" type="radio">Adventure <br>
-                            <input name="Genre" value="Strategie" type="radio">Strategie <br>
-                            <input name="Genre" value="Jump and Run" type="radio">Jump & Run <br>
-                            <input name="Genre" value="Shooter" type="radio">Shooter <br>
-                            <input name="Genre" value="Rollenspiel" type="radio">Rollenspiel <br>
-                            </div>
-                     </div>
-                        <div id="Forms" id="left">
-                            <label id="Lable" for="Plattform">Plattform</label> <br>
-                            <div id="RadioButton">
-                            <input name="Plattform" value="PC" type="radio" checked>PC <br>
-                            <input name="Plattform" value="PS4" type="radio">PS4 <br>
-                            <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
-                            <input name="Plattform" value="Nintendo Switch" type="radio">Nintendo Switch <br>
-                            </div>
-                        </div>
-                        <div id="Forms" id="left">
-                            <label id="Lable" for="ZeitlicherAufwand">Zeitaufwand</label> <br>
-                            <div id="RadioButton">
-                            <input name="ZeitlicherAufwand" value="5" type="radio">bis zu 5 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="10" type="radio">bis zu 10 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="20" type="radio">bis zu 20 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="30" type="radio">bis zu 30 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
-                            <input name="ZeitlicherAufwand" value="9999" type="radio" checked>Egal <br>
-                            </div>
-                        </div>
-                        <div id="Forms" id="left">
-                            <label id="Lable" for="Altersbeschränkung">FSK</label> <br>
-                            <div id="RadioButton">
-                            <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
-                            <input name="Altersbeschraenkung" value="12" type="radio" checked>Bis zu FSK 12 <br>
-                            <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
-                            <input name="Altersbeschraenkung" value="18" type="radio">Bis zu FSK 18 <br>
-                            </div>
-                        </div>
-                        <div id="Forms" id="left">
-                            <label id="Lable" for="Single/Multiplayer">Solo/Ko-op</label> <br>
-                            <div id="RadioButton">
-                            <input name="SingelMulti" value="Singleplayer" type="radio" checked>Singleplayer <br>
-                            <input name="SingelMulti" value="Multiplayer" type="radio">Multiplayer <br>
-                            </div>
-                        </div>
-                        <div id="Forms" id="left">
-                            <label id="Lable" for="Budget">Budget</label> <br>
-                            <div id="RadioButton">
-                            <input name="Budget" value="5" type="radio">Bis zu 5€ <br>
-                            <input name="Budget" value="10" type="radio">Bis zu 10€ <br>
-                            <input name="Budget" value="20" type="radio">Bis zu 20€ <br>
-                            <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
-                            <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
-                            <input name="Budget" value="9999" type="radio" checked>Egal <br>
-                            </div>
-                        </div>
 
 
     <div id="allePräferenzen">
@@ -208,14 +143,38 @@ muss mindestens eine Ziffer enthalten
                 <input name="Plattform" value="XBOX ONE" type="radio">XBOX ONE <br>
                 <input name="Plattform" value="Nintendo Switch" type="radio">Nintendo Switch <br>
             </div>
+            <div id="Forms">
+                <label id="Lable" for="ZeitlicherAufwand">Zeitaufwand</label> <br>
+                <input name="ZeitlicherAufwand" value="5" type="radio">bis zu 5 Stunden <br>
+                <input name="ZeitlicherAufwand" value="10" type="radio">bis zu 10 Stunden <br>
+                <input name="ZeitlicherAufwand" value="20" type="radio">bis zu 20 Stunden <br>
+                <input name="ZeitlicherAufwand" value="30" type="radio">bis zu 30 Stunden <br>
+                <input name="ZeitlicherAufwand" value="50" type="radio">bis zu 50 Stunden <br>
+                <input name="ZeitlicherAufwand" value="600" type="radio">mehr als 50 Stunden <br>
+                <input name="ZeitlicherAufwand" value="9999" type="radio" checked>Egal <br>
             </div>
+            <div id="Forms">
+                <label id="Lable" for="Altersbeschränkung">FSK</label> <br>
+                <input name="Altersbeschraenkung" value="6" type="radio">Bis zu FSK 6 <br>
+                <input name="Altersbeschraenkung" value="12" type="radio" checked>Bis zu FSK 12 <br>
+                <input name="Altersbeschraenkung" value="16" type="radio">Bis zu FSK 16 <br>
+                <input name="Altersbeschraenkung" value="18" type="radio">Bis zu FSK 18 <br>
+            </div>
+            <div id="Forms">
+                <label id="Lable" for="Single/Multiplayer">Solo/Ko-op</label> <br>
+                <input name="SingelMulti" value="Singleplayer" type="radio" checked>Singleplayer <br>
+                <input name="SingelMulti" value="Multiplayer" type="radio">Multiplayer <br>
+            </div>
+            <div id="Forms">
+                <label id="Lable" for="Budget">Budget</label> <br>
+                <input name="Budget" value="5" type="radio">Bis zu 5€ <br>
+                <input name="Budget" value="10" type="radio">Bis zu 10€ <br>
+                <input name="Budget" value="20" type="radio">Bis zu 20€ <br>
+                <input name="Budget" value="40" type="radio">Bis zu 40€ <br>
+                <input name="Budget" value="60" type="radio">Bis zu 60€ <br>
+                <input name="Budget" value="9999" type="radio" checked>Egal <br>
             </div>
 
-            </div>
-    </div>
-    <div id="RegistrierenButtondiv">
-        <button id="registrierenButton" type="submit"> Registrierung bestätigen</button>
-    </div>
 
         </div>
         <div id="RegistrierenButtondiv">
