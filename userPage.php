@@ -33,7 +33,7 @@ require "php-config.php";
         echo "Herzlich Willkommen: " . $_SESSION['user_id'] . "!";
     } else {
         Print "Bitte erst einloggen";
-        header('Location: http://localhost:8888/whattoplay/einloggen.php');
+        header('Location: http://localhost/whattoplay/einloggen.php');
         exit; //Port 8888 für Mac
     }
     ?>
