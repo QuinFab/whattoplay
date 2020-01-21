@@ -301,15 +301,24 @@ li {
 .UserInfo{
     float: right;
 }
-#Forms{
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    background-color: rgba(255,255,255,0.5);
+
+.Forms{
+    border-top: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    min-width: 180px;
+    padding:10px;
+    width: auto;
     height: 200px;
+    text-align: center;
+    float: left;
+}
+#Forms{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:10px;
+    padding-right:10px;
+    width: auto;
+    height: 170px;
     text-align: center;
     float: left;
 }
@@ -333,6 +342,31 @@ li {
     text-align: center;
     align-content: center;
     display: inline-block;
+}
+/*#registrierung{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+}*/
+#registrierung1{
+    text-align: center;
+    display: block ruby;
+    padding-top: 40px;
+}
+#PräferenzenKasten{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    background-color: rgba(255,255,255,0.5);
+}
+#PräferenzenKasten1{
+    text-align: center;
+    display: block ruby;
+    padding-top: 40px;
+}
+#RadioButton{
+    text-align: left;
 }
 
 #passwortzuruecksetzenButton{
