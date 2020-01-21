@@ -32,18 +32,6 @@ p {
     background: gray;
 }
 
-/* #Forms {
-    margin: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 3px;
-    float: left;
-    padding: 10px;
-    background-color: lightgrey;
-    font-size: 20px;
-
-} */
-
 #registrierungBestätigen {
     margin-top: 20px;
 }
@@ -310,8 +298,9 @@ li {
     margin-right: auto;
     min-width: 180px;
     height: 200px;
-    text-align: center;
+    text-align: left;
     float: left;
+
 }
 #RegistrierenButtondiv{
     text-align: center;

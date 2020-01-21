@@ -5,7 +5,7 @@ if (isset($_POST['email'])) {
     $pdo = new PDO(
         'mysql:host=localhost;dbname=iba',
         'root',
-        '' //root pwd root für mac
+        'root' //root pwd root für mac
     );
 
     $email1 = $_POST['email'];

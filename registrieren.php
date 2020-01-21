@@ -10,7 +10,7 @@ if (isset($_POST['email'])) {
     $db = new PDO(
         'mysql:host=localhost;dbname=iba',
         'root',
-        '' //pwd root für mac
+        'root' //pwd root für mac
     );
 
     $query = "INSERT INTO user (user_id, email, password, erstelltam) VALUES (:user_id, :email, :password, :erstelltam)";
@@ -114,12 +114,14 @@ muss mindestens eine Ziffer enthalten
         <br><br>
         <label class="UserInfoBeschreibung" for="email"> Email-Adresse </label>
         <input class="UserInfo" id="email" name="email" type="Email" placeholder="z.B. meineMail@web.de" required
-               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="- Ihre Email muss ein @ beinhalten">
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$"
+               title="- Ihre Email muss ein @ beinhalten">
         <br><br>
         <label class="UserInfoBeschreibung" for="UserMail_again"> Email-Adresse bestätigen </label>
         <input class="UserInfo" id="UserMail_again" name="UserMail_again" type="email"
                placeholder="z.B. meineMail@web.de" required
-               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$" title="- Ihre Email muss ein @ beinhalten">
+               pattern="^[-_.\w]+@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.){1,300}[a-zA-Z]{2,9})$"
+               title="- Ihre Email muss ein @ beinhalten">
         <br>
     </div>
 

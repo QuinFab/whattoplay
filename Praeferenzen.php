@@ -7,7 +7,7 @@ if (isset($_POST['Genre'])) {
     $db = new PDO(
         'mysql:host=localhost;dbname=iba',
         'root',
-        '' //root pwd root für mac
+        'root' //root pwd root für mac
     );
 
     $statement = $db->prepare("Delete FROM praeferenzen WHERE user_id = :user_id");
